@@ -1,7 +1,5 @@
 <template>
-  <div>
-    slm
-  </div>
+  <div>main page</div>
 </template>
 
 <script>

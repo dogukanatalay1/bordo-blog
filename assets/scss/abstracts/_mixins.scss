@@ -1,0 +1,15 @@
+//boyut verme
+@mixin boyut($w: null, $h: null){
+            width: $w;
+            height: $h;    
+}
+        
+        
+// renk
+@mixin renk($bg, $text) {
+            background: $bg;
+            color: $text;
+}
+        
+        
+        
