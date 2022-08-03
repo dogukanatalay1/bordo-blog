@@ -1,0 +1,109 @@
+@import '@/assets/scss/abstracts/_variables.scss';
+
+
+.nav {
+  box-sizing: border-box;
+  width: 1440px;
+  border-bottom: 1px solid $chefs-hat;
+  height: 80px;
+  background: $base-white;
+  flex: none;
+  align-self: stretch;
+  flex-grow: 0;
+  order: 0;
+
+  &_header {
+    height: 80px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    order: 0;
+
+    &_container {
+      padding: 0px 32px;
+      width: 1280px;
+      height: 44px;
+      flex: none;
+      flex-grow: 0;
+      margin: 18px 80px;
+      order: 0;
+
+      &_content {
+        gap: 40px;
+        width: 583px;
+        height: 32px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+
+        &_logo {
+          padding: 0px;
+          width: 142px;
+          height: 32px;
+          flex: none;
+          order: 0;
+          flex-grow: 0;
+
+          &_logo-wrap {
+            &_logotype {
+              color: $sambucus;
+            }
+
+            &_logomark {
+            }
+          }
+        }
+
+        &_navigation {
+          gap: 32px;
+          width: 401px;
+          height: 32px;
+          flex: none;
+          order: 1;
+          flex-grow: 0;
+          left: 182px; // not sure
+
+          .nav-item {
+            color: $flinstone;
+          }
+        }
+      }
+
+      &_nav-actions {
+        gap: 12px;
+        width: 189px;
+        height: 44px;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+
+        .nav-btn {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 10px 18px;
+          gap: 8px;
+          border-radius: 8px;
+          
+          &:active {
+            border: none;
+          }
+
+          &-login {
+            color: $flinstone;
+          }
+          &-signup {
+            background: $gloomy-purple;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+

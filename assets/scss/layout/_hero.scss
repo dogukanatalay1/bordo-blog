@@ -1,0 +1,159 @@
+@import '@/assets/scss/abstracts/_variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Inter:wght@600&family=Roboto:ital,wght@0,300;0,400;1,400&display=swap');
+
+.hero {
+  //padding: 96px 0px 64px;
+  gap: 96px;
+  //width: 1440px;
+  height: 1072px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  border: 1px solid black;
+
+  &_header-container {
+    padding: 0px 32px;
+    gap: 32px;
+    width: 1280px;
+    height: 336px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    &_content {
+      gap: 48px;
+      width: 768px;
+      height: 336px;
+      flex: none;
+      order: 0;
+      align-self: stretch;
+      flex-grow: 0;
+
+      &_heading {
+        gap: 24px;
+        width: 768px;
+        height: 228px;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+
+        .heading {
+          color: $sambucus;
+          width: 768px;
+          height: 144px;
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 60px;
+          line-height: 72px;
+          /* or 120% */
+          letter-spacing: -0.02em;
+          flex: none;
+          order: 0;
+          align-self: stretch;
+          flex-grow: 0;
+        }
+        .support-text {
+          color: $flinstone;
+          width: 768px;
+          height: 60px;
+          /* Text xl/Normal */
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 30px;
+          /* or 150% */
+          flex: none;
+          order: 1;
+          align-self: stretch;
+          flex-grow: 0;
+        }
+      }
+
+      &_actions {
+        gap: 12px;
+        width: 276px;
+        height: 60px;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+
+        .action-btn {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 16px 28px;
+          gap: 12px;
+          flex-grow: 0;
+          flex: none;
+          border-radius: 8px;
+          box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+          height: 60px;
+        }
+
+        .demo-btn {
+          width: 143px;
+          background: #ffffff;
+          order: 0;
+          border: 1px solid $satin-white;
+
+          &-text {
+            width: 51px;
+            height: 28px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+            color: $black-river-falls;
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+          }
+        }
+
+        .sign-btn {
+          width: 121px;
+          background: $gloomy-purple;
+          order: 1;
+          border: 1px solid $gloomy-purple;
+
+          &-text {
+            width: 65px;
+            height: 28px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+            color: #ffffff;
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &_img-container {
+    padding: 0px 32px;
+    gap: 32px;
+    width: 1280px;
+    height: 480px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    border: 1px solid black;
+  }
+}
+
+
+
+
+
+
