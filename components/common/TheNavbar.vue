@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav">
+  <nav class="nav navbar">
     <div
       class="nav_header d-flex flex-column justify-content-center align-items-center position-absolute p-0"
     >

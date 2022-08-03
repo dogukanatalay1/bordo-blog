@@ -1,0 +1,39 @@
+@import '@/assets/scss/abstracts/_variables.scss';
+
+.sponsors {
+  padding: 0px 0px 96px;
+  width: 1440px;
+  height: 334px;
+  background: #ffffff;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+  border: 1px solid black;
+
+  &_container {
+    padding: 0px 32px;
+    gap: 32px;
+    width: 1280px;
+    height: 238px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    border: 1px solid black;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
