@@ -5,12 +5,11 @@
   //padding: 96px 0px 64px;
   gap: 96px;
   //width: 1440px;
-  height: 1072px;
+  height: 1152px;
   flex: none;
   order: 1;
   align-self: stretch;
   flex-grow: 0;
-  border: 1px solid black;
 
   &_header-container {
     padding: 0px 32px;
@@ -118,9 +117,9 @@
 
         .sign-btn {
           width: 121px;
-          background: $gloomy-purple;
+          background: $bordo;
           order: 1;
-          border: 1px solid $gloomy-purple;
+          border: 1px solid $bordo;
 
           &-text {
             width: 65px;
@@ -134,6 +133,19 @@
             flex: none;
             order: 1;
             flex-grow: 0;
+
+            .play-icon-container {
+              width: 24px;
+              height: 24px;
+              flex: none;
+              order: 0;
+              flex-grow: 0;
+
+              .play-icon {
+                position: absolute;
+                border: 2px solid #344054;
+              }
+            }
           }
         }
       }
@@ -148,12 +160,91 @@
     flex: none;
     order: 1;
     flex-grow: 0;
-    border: 1px solid black;
+
+    &_content {
+      width: 1216px;
+      height: 480px;
+      background: $chefs-hat;
+      border-radius: 16px;
+      flex: none;
+      order: 0;
+      align-self: stretch;
+      flex-grow: 0;
+
+      &_cards {
+        position: relative;
+        left: 0px;
+        right: 0px;
+        top: -128px;
+        bottom: 0px;
+        border-radius: 16px;
+        height: 608px;
+        width: 1216px;
+        overflow: hidden;
+
+        .card {
+          border-radius: 20px;
+          transform: rotate(30deg);
+          position: absolute;
+          box-sizing: border-box;
+        }
+
+        .card-1 {
+          left: 56.66%;
+          right: 17.35%;
+          top: 1.64%;
+          bottom: 67.11%;
+        }
+
+        .card-2 {
+          left: 36.8%;
+          right: 37.22%;
+          top: 17.83%;
+          bottom: 50.92%;
+        }
+        .card-3 {
+          left: 80.31%;
+          right: -6.29%;
+          top: 28.95%;
+          bottom: 39.8%;
+          z-index: 0;
+        }
+        .card-4 {
+          left: 60.44%;
+          right: 13.57%;
+          top: 45.13%;
+          bottom: 23.62%;
+        }
+        .card-5 {
+          left: 39.72%;
+          right: 34.29%;
+          top: 60.33%;
+          bottom: 8.42%;
+        }
+        .card-6 {
+          left: 19.85%;
+          right: 54.16%;
+          top: 76.51%;
+        }
+        .card-7 {
+          left: 84.09%;
+          right: -10.07%;
+          top: 72.43%;
+          bottom: -3.68%;
+        }
+        .card-8 {
+          left: 63.37%;
+          right: 10.65%;
+          top: 87.63%;
+          bottom: -18.88%;
+        }
+        // .card-9 {
+        //   left: 103.95%;
+        //   right: -29.94%;
+        //   top: 56.25%;
+        //   bottom: 12.5%;
+        // }
+      }
+    }
   }
 }
-
-
-
-
-
-

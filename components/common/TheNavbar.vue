@@ -30,12 +30,12 @@
               Home
             </button>
             <div class="nav-item">
-              <button>Products</button><fa icon="chevron" /><font-awesome-icon
-                icon="fa-solid fa-chevron-down"
-              />
+              <button class="d-flex align-items-center">
+                Products <ion-icon name="chevron-down" />
+              </button>
             </div>
             <div class="nav-item">
-              <button>Resources</button><fa icon="chevron" />
+              <button>Resources<ion-icon name="chevron-down" /></button>
             </div>
             <button class="nav-item">
               Pricing
