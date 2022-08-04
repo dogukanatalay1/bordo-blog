@@ -2,15 +2,16 @@
   <div class="main-page d-flex flex-column align-items-center">
     <!-- <CommonHero /> -->
     <!-- <Sponsors /> -->
-    <Features />
+    <!-- <Features /> -->
+    <Pricing />
   </div>
 </template>
 
 <script>
-import Features from '../components/Features.vue'
+import Pricing from '../components/Pricing.vue'
 export default {
   name: 'IndexPage',
-  components: { Features }
+  components: { Pricing }
 }
 </script>
 

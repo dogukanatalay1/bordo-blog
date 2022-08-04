@@ -24,9 +24,84 @@
         </div>
       </div>
     </div>
-    <div
-      class="features_content-container d-flex flex-row align-items-center"
-    />
+    <div class="features_content-container d-flex flex-row align-items-center">
+      <div
+        class="features_content-container_content-left d-flex flex-column align-items-start p-0"
+      >
+        <div class="features_content-container_content-left_feature-tab">
+          <div
+            class="features_content-container_content-left_feature-tab_text d-flex flex-column align-items-center p-0"
+          >
+            <p class="text">
+              Share team inboxes
+            </p>
+            <p class="supporting-text">
+              Whether you have a team of 2 or 200, our shared team inboxes keep
+              everyone on the same page in the loop
+            </p>
+          </div>
+          <button
+            class="features_content-container_content-left_feature-tab_btn d-flex flex-row justify-content-center align-items-center p-0"
+          >
+            <p class="text">
+              Learn more
+            </p>
+            <div class="icon-box">
+              <ion-icon class="icon" name="arrow-forward-outline" />
+            </div>
+          </button>
+        </div>
+        <div class="features_content-container_content-left_feature-tab">
+          <div
+            class="features_content-container_content-left_feature-tab_text d-flex flex-column align-items-center p-0"
+          >
+            <p class="text">
+              Deliver instant answers
+            </p>
+            <p class="supporting-text">
+              Whether you have a team of 2 or 200, our shared team inboxes keep
+              everyone on the same page in the loop
+            </p>
+          </div>
+          <button
+            class="features_content-container_content-left_feature-tab_btn d-flex flex-row justify-content-center align-items-center p-0"
+          >
+            <p class="text">
+              Learn more
+            </p>
+            <div class="icon-box">
+              <ion-icon class="icon" name="arrow-forward-outline" />
+            </div>
+          </button>
+        </div>
+        <div class="features_content-container_content-left_feature-tab">
+          <div
+            class="features_content-container_content-left_feature-tab_text d-flex flex-column align-items-center p-0"
+          >
+            <p class="text">
+              Manage your team with reports
+            </p>
+            <p class="supporting-text">
+              Whether you have a team of 2 or 200, our shared team inboxes keep
+              everyone on the same page in the loop
+            </p>
+          </div>
+          <button
+            class="features_content-container_content-left_feature-tab_btn d-flex flex-row justify-content-center align-items-center p-0"
+          >
+            <p class="text">
+              Learn more
+            </p>
+            <div class="icon-box">
+              <ion-icon class="icon" name="arrow-forward-outline" />
+            </div>
+          </button>
+        </div>
+      </div>
+      <div class="features_content-container_content-right">
+        <div class="features_content-container_content-right_cards-wrap" />
+      </div>
+    </div>
   </section>
 </template>
 

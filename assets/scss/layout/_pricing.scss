@@ -1,0 +1,62 @@
+@import '@/assets/scss/abstracts/_variables.scss';
+
+.pricing-section {
+  padding: 96px 0px;
+  gap: 64px;
+  width: 1440px;
+  height: 956px;
+  background: #ffffff;
+  flex: none;
+  order: 6;
+  align-self: stretch;
+  flex-grow: 0;
+
+  border: 1px solid black;
+
+  &_heading {
+    padding: 0px 32px;
+    gap: 32px;
+    width: 1280px;
+    height: 128px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    border: 1px solid black;
+
+    &_content {
+      gap: 48px;
+      width: 1216px;
+      height: 128px;
+      flex: none;
+      order: 0;
+      align-self: stretch;
+      flex-grow: 0;
+
+      border: 1px solid black;
+
+      &_head-support-container {
+        gap: 20px;
+        width: 768px;
+        height: 128px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+
+        border: 1px solid black;
+      }
+    }
+  }
+
+  &_content {
+    padding: 0px 32px;
+    gap: 96px;
+    width: 1280px;
+    height: 572px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    border: 1px solid black;
+  }
+}
