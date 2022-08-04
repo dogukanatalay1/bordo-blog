@@ -1,14 +1,19 @@
 <template>
-  <div>
-    <CommonHero />
-    <Sponsors />
+  <div class="main-page d-flex flex-column align-items-center">
+    <!-- <CommonHero /> -->
+    <!-- <Sponsors /> -->
+    <Features />
   </div>
 </template>
 
 <script>
-import Sponsors from '../components/Sponsors.vue'
+import Features from '../components/Features.vue'
 export default {
   name: 'IndexPage',
-  components: { Sponsors }
+  components: { Features }
 }
 </script>
+
+<style>
+@import '@/assets/scss/pages/_home.scss';
+</style>

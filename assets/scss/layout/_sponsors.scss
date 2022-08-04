@@ -9,8 +9,7 @@
   order: 1;
   align-self: stretch;
   flex-grow: 0;
-
-  border: 1px solid black;
+  //
 
   &_container {
     padding: 0px 32px;
@@ -21,19 +20,58 @@
     order: 0;
     flex-grow: 0;
 
-    border: 1px solid black;
+    &_content {
+      padding: 64px;
+      gap: 32px;
+      width: 1216px;
+      height: 238px;
+      background: $dr-white;
+      border-radius: 16px;
+      flex: none;
+      order: 0;
+      align-self: stretch;
+      flex-grow: 0;
+
+      &_supporting-text {
+        width: 1088px;
+        height: 30px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        color: $flinstone;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+      }
+
+      &_logos {
+        gap: 48px;
+        width: 1088px;
+        height: 48px;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+
+        &_logo {
+          width: 146px;
+          height: 48px;
+          flex: none;
+          flex-grow: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            color: $sambucus;
+            font-weight: 700;
+          }
+        }
+      }
+    }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
