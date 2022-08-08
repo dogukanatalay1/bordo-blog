@@ -1,17 +1,15 @@
 <template>
   <div class="main-page d-flex flex-column align-items-center">
-    <!-- <CommonHero /> -->
-    <!-- <Sponsors /> -->
-    <!-- <Features /> -->
+    <CommonHero />
+    <Sponsors />
+    <Features />
     <Pricing />
   </div>
 </template>
 
 <script>
-import Pricing from '../components/Pricing.vue'
 export default {
-  name: 'IndexPage',
-  components: { Pricing }
+  name: 'IndexPage'
 }
 </script>
 
