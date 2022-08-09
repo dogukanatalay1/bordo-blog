@@ -104,6 +104,4 @@
 export default { name: 'QuoteSection' }
 </script>
 
-<style lang="scss" scoped>
-@import '@/assets/scss/layout/_quote.scss';
-</style>
+<style lang="scss" scoped></style>

@@ -19,7 +19,9 @@
         <div
           class="cta-second_container_content_actions d-flex flex-row align-items-start p-0"
         >
-          <button class="cta-second_container_content_actions_btn d-flex flex-row justify-content-center align-items-center">
+          <button
+            class="cta-second_container_content_actions_btn d-flex flex-row justify-content-center align-items-center"
+          >
             Learn more
           </button>
           <button class="cta-second_container_content_actions_btn">
@@ -35,6 +37,4 @@
 export default { name: 'SecondCta' }
 </script>
 
-<style lang="scss" scoped>
-@import '@/assets/scss/layout/_ctaSecond.scss';
-</style>
+<style lang="scss" scoped></style>

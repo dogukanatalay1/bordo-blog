@@ -63,5 +63,5 @@ export default {
 </script>
 class="card"
 <style lang="scss" scoped>
-@import '@/assets/scss/layout/_hero.scss';
+
 </style>

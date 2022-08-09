@@ -7,16 +7,14 @@
     <Pricing />
     <Quote />
     <CtaSectionS />
+    <CommonTheFooter />
   </div>
 </template>
 
 <script>
-
 export default {
   name: 'IndexPage'
 }
 </script>
 
-<style>
-@import '@/assets/scss/pages/_home.scss';
-</style>
+<style></style>
