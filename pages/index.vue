@@ -3,7 +3,9 @@
     <CommonHero />
     <Sponsors />
     <Features />
+    <CtaSection />
     <Pricing />
+    <Quote />
   </div>
 </template>
 

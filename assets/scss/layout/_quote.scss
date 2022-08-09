@@ -1,0 +1,170 @@
+@import '@/assets/scss/abstracts/_variables.scss';
+
+.quote {
+  padding: 0px 0px 96px;
+  gap: 64px;
+  //width: 1440px;
+  width: 100%;
+  height: 560px;
+  background: #ffffff;
+  flex: none;
+  align-self: stretch;
+  flex-grow: 0;
+  position: static;
+
+  &_container {
+    padding: 0px 32px;
+    width: 1280px;
+    height: 464px;
+    flex: none;
+    flex-grow: 0;
+
+    &_content {
+      width: 1216px;
+      height: 464px;
+      background: $midnight-express;
+      border-radius: 24px;
+      flex: none;
+      flex-grow: 1;
+      overflow: hidden;
+
+      &_text-content {
+        padding: 64px;
+        gap: 40px;
+        width: 736px;
+        height: 434px;
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+
+        &_quote-and-attr {
+          gap: 32px;
+          width: 608px;
+          height: 306px;
+          flex: none;
+          align-self: stretch;
+          flex-grow: 0;
+
+          &_pagination {
+            gap: 16px;
+            width: 62px;
+            height: 10px;
+            flex: none;
+            flex-grow: 0;
+            order: 2;
+
+            &_dot {
+              width: 10px;
+              height: 10px;
+              background: $flinstone;
+              border-radius: 6px;
+              flex: none;
+              flex-grow: 0;
+
+              &:nth-child(1) {
+                background: white;
+              }
+            }
+          }
+
+          &_text-and-support {
+            gap: 4px;
+            width: 608px;
+            height: 56px;
+            flex: none;
+            align-self: stretch;
+            flex-grow: 0;
+
+            &_text {
+              width: 608px;
+              height: 28px;
+              font-family: 'Inter';
+              font-style: normal;
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 28px;
+              color: #ffffff;
+              flex: none;
+              order: 0;
+              align-self: stretch;
+              flex-grow: 0;
+            }
+            &_support {
+              width: 608px;
+              height: 24px;
+              font-family: 'Inter';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 24px;
+              color: $bright-grey;
+              flex: none;
+              order: 1;
+              align-self: stretch;
+              flex-grow: 0;
+            }
+          }
+
+          &_quote-and-stars {
+            gap: 24px;
+            width: 608px;
+            height: 176px;
+            flex: none;
+            align-self: stretch;
+            flex-grow: 0;
+
+            &_stars {
+              gap: 4px;
+              width: 116px;
+              height: 20px;
+              flex: none;
+              flex-grow: 0;
+
+              &_star-icon {
+                width: 20px;
+                height: 20px;
+                flex: none;
+                flex-grow: 0;
+                text-align: center;
+                margin-bottom: 2px;
+
+                &_icon {
+                  position: relative;
+                  color: #fec84b;
+                  border-radius: 0.5px;
+                  margin-bottom: 2px;
+                }
+              }
+            }
+            &_quote {
+              width: 608px;
+              height: 132px;
+              font-family: 'Inter';
+              font-style: normal;
+              font-weight: 500;
+              font-size: 36px;
+              line-height: 44px;
+              letter-spacing: -0.02em;
+              margin: 0;
+              color: #ffffff;
+              flex: none;
+              order: 1;
+              align-self: stretch;
+              flex-grow: 0;
+            }
+          }
+        }
+      }
+
+      &_image {
+        width: 480px;
+        height: 464px;
+        background: url('~/static/images/quote.png');
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        position: relative;
+      }
+    }
+  }
+}
