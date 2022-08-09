@@ -6,10 +6,12 @@
     <CtaSection />
     <Pricing />
     <Quote />
+    <CtaSectionS />
   </div>
 </template>
 
 <script>
+
 export default {
   name: 'IndexPage'
 }
