@@ -35,7 +35,8 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    '@nuxtjs/fontawesome'
+    '@nuxtjs/fontawesome',
+    '@nuxtjs/auth-next'
   ],
 
   /* ICON: <fa icon="iconadi" /> */
@@ -46,10 +47,53 @@ export default {
       brands: true
     }
   },
+
+  publicRuntimeConfig: {
+    axios: {
+      browserBaseURL: process.env.BROWSER_BASE_URL
+    }
+  },
+
+  privateRuntimeConfig: {
+    axios: {
+      baseURL: process.env.BASE_URL
+    }
+  },
+
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/'
+    baseURL: process.env.BROWSER_BASE_URL
+  },
+
+  auth: {
+    strategies: {
+      local: {
+        endpoints: {
+          // login propertyName: 'access' denenebilir
+          login: { url: '/user/login', method: 'post' },
+          logout: false,
+          user: {
+            url: '/user/profile',
+            method: 'get',
+            propertyName: false
+          }
+        },
+        tokenRequired: true
+      }
+    },
+    rewriteRedirects: false,
+    redirect: {
+      login: '/signin',
+      logout: '/signin',
+      home: '/',
+      user: '/user/profile',
+      callback: '/'
+    }
+  },
+
+  env: {
+    baseUrl: process.env.BROWSER_BASE_URL
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

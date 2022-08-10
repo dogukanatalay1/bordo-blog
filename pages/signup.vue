@@ -17,7 +17,10 @@
       <div
         class="signup-page_content_form-container d-flex flex-column align-items-center p-0"
       >
-        <form class="signup-page_content_form-container_form" method="post">
+        <form
+          class="signup-page_content_form-container_form"
+          @submit.prevent="register"
+        >
           <div class="signup-page_content_form-container_form_input-field">
             <label class="label" for="name">Name*</label>
             <CustomInput
@@ -51,7 +54,7 @@
       <div
         class="signup-page_content_actions d-flex flex-column align-items-start p-0"
       >
-        <button class="signup-page_content_actions_btn" @click="test">
+        <button type="submit" class="signup-page_content_actions_btn">
           <span class="signup-page_content_actions_btn_text">Get Started</span>
         </button>
       </div>
@@ -70,8 +73,26 @@ export default {
     }
   },
   methods: {
-    test () {
-      console.log(this.name, this.email, this.password)
+    async register () {
+      try {
+        await this.$axios.post('/user/register', {
+          email: this.email,
+          username: this.username,
+          password: this.password
+        })
+
+        await this.$auth
+          .loginWith('local', {
+            data: {
+              username: this.username,
+              password: this.password
+            }
+          })
+          .then(() => this.$router.push('/'))
+          .then(this.$auth.loggedIn) // not sure
+      } catch (error) {
+        window.console.log(error)
+      }
     }
   }
 }

@@ -5,6 +5,7 @@
       :type="type"
       :placeholder="placeholder"
       class="form-input"
+      required
     >
   </div>
 </template>
