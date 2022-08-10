@@ -24,6 +24,7 @@
               ref="input1"
               type="text"
               placeholder="Enter your name"
+              :cmc="childMethodCall"
               @inputValue="name = $event"
             />
           </div>
@@ -33,6 +34,7 @@
               ref="input2"
               type="text"
               placeholder="Enter your email"
+              :cmc="childMethodCall"
               @inputValue="email = $event"
             />
           </div>
@@ -42,6 +44,7 @@
               ref="input3"
               type="password"
               placeholder="Enter your password"
+              :cmc="childMethodCall"
               @inputValue="password = $event"
             />
           </div>
@@ -70,18 +73,14 @@ export default {
     return {
       name: '',
       email: '',
-      password: ''
+      password: '',
+      childMethodCall: 0
     }
   },
   methods: {
     test () {
-      //       const child1 = this.$refs.input1
-      //       const child2 = this.$refs.input2
-      //       const child3 = this.$refs.input3
-      //       child1.sendData()
-      //       child2.sendData()
-      //       child3.sendData()
-      //       console.log(this.name, this.email, this.password)
+      this.childMethodCall++
+      console.log(this.name, this.email, this.password)
     }
   }
 }
