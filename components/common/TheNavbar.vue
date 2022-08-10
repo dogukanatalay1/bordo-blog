@@ -49,9 +49,13 @@
           <button class="nav-btn nav-btn-login">
             Log in
           </button>
-          <button class="nav-btn nav-btn-signup">
+          <nuxt-link
+            to="/signup"
+            style="text-decoration: none"
+            class="nav-btn nav-btn-signup"
+          >
             Sign up
-          </button>
+          </nuxt-link>
         </div>
       </div>
     </div>
