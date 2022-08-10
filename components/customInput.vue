@@ -33,14 +33,8 @@ export default {
     }
   },
   watch: {
-    cmc () {
-      this.sendData()
-    }
-  },
-  methods: {
-    sendData () {
+    inputValue () {
       this.$emit('inputValue', this.inputValue)
-      console.log('child method called')
     }
   }
 }

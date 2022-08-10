@@ -24,7 +24,6 @@
               ref="input1"
               type="text"
               placeholder="Enter your name"
-              :cmc="childMethodCall"
               @inputValue="name = $event"
             />
           </div>
@@ -34,7 +33,6 @@
               ref="input2"
               type="text"
               placeholder="Enter your email"
-              :cmc="childMethodCall"
               @inputValue="email = $event"
             />
           </div>
@@ -44,15 +42,10 @@
               ref="input3"
               type="password"
               placeholder="Enter your password"
-              :cmc="childMethodCall"
               @inputValue="password = $event"
             />
           </div>
         </form>
-
-        <!-- <button class="btn btn-danger" @click="test()">
-          deneme
-        </button> -->
       </div>
 
       <div
@@ -73,13 +66,11 @@ export default {
     return {
       name: '',
       email: '',
-      password: '',
-      childMethodCall: 0
+      password: ''
     }
   },
   methods: {
     test () {
-      this.childMethodCall++
       console.log(this.name, this.email, this.password)
     }
   }
