@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer d-flex flex-column align-items-start p-0">
+  <footer class="footer d-flex flex-column align-items-center p-0">
     <div class="footer_join-section d-flex flex-column align-items-center">
       <div
         class="footer_join-section_container d-flex flex-column align-items-start"
@@ -247,6 +247,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
