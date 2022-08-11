@@ -31,11 +31,11 @@
             </button>
             <div class="nav-item">
               <button class="d-flex align-items-center">
-                Products <ion-icon name="chevron-down" />
+                Products
               </button>
             </div>
             <div class="nav-item">
-              <button>Resources<ion-icon name="chevron-down" /></button>
+              <button>Resources</button>
             </div>
             <button class="nav-item">
               Pricing

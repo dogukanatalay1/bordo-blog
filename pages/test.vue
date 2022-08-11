@@ -1,5 +1,7 @@
 <template>
-  <div><customInput /></div>
+  <div class="">
+    <PostsBlogSection />
+  </div>
 </template>
 
 <script>

@@ -86,9 +86,9 @@ export default {
           user: {
             url: 'user/profile',
             method: 'get',
-            propertyName: false,
+            propertyName: false
             //
-            appendToken: false
+            // appendToken: false
             //
             // property: false
           }
@@ -107,8 +107,8 @@ export default {
     },
     tokenType: 'Bearer',
     // storageTokenName: 'nuxt-auth-token'
-    // storageTokenName: 'auth._token.local'
-    storageTokenName: '_token_expiration.local'
+    storageTokenName: 'auth._token.local'
+    // storageTokenName: '_token_expiration.local'
   },
 
   env: {
