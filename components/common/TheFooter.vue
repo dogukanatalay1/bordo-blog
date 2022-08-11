@@ -126,7 +126,7 @@
               </div>
             </div>
             <div
-              v-for="i in 5"
+              v-for="i in 4"
               :key="i"
               class="footer_links-section_link-container_content_links_link-column d-flex flex-column align-items-start p-0"
             >
