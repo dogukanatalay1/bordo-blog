@@ -46,9 +46,13 @@
         <div
           class="nav_header_container_nav-actions d-flex flex-row align-items-center justify-content-around p-0"
         >
-          <button class="nav-btn nav-btn-login">
+          <nuxt-link
+            to="/signin"
+            style="text-decoration: none"
+            class="nav-btn nav-btn-login"
+          >
             Log in
-          </button>
+          </nuxt-link>
           <nuxt-link
             to="/signup"
             style="text-decoration: none"

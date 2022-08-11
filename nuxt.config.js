@@ -63,7 +63,12 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: process.env.BROWSER_BASE_URL
+    //  baseURL: process.env.BROWSER_BASE_URL
+    baseURL: 'https://bordo-blog.herokuapp.com/api/v1/'
+  },
+
+  server: {
+    port: 3001
   },
 
   auth: {
@@ -71,10 +76,14 @@ export default {
       local: {
         endpoints: {
           // login propertyName: 'access' denenebilir
-          login: { url: '/user/login', method: 'post' },
+          login: {
+            url: 'user/login',
+            method: 'post'
+            // propertyName:
+          },
           logout: false,
           user: {
-            url: '/user/profile',
+            url: 'user/profile',
             method: 'get',
             propertyName: false
           }
@@ -87,13 +96,15 @@ export default {
       login: '/signin',
       logout: '/signin',
       home: '/',
-      user: '/user/profile',
+      user: 'user/profile',
       callback: '/'
     }
   },
 
   env: {
     baseUrl: process.env.BROWSER_BASE_URL
+    // BASE_URL: 'https://bordo-blog.herokuapp.com/api/v1/',
+    // BROWSER_BASE_URL: 'https://bordo-blog.herokuapp.com/api/v1/'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

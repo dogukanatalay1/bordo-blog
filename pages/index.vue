@@ -13,7 +13,10 @@
 
 <script>
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  created () {
+    console.log(this.$auth.loggedIn)
+  }
 }
 </script>
 
