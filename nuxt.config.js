@@ -75,17 +75,22 @@ export default {
     strategies: {
       local: {
         endpoints: {
-          // login propertyName: 'access' denenebilir
+          // login propertyName: 'access_token' denenebilir
           login: {
             url: 'user/login',
-            method: 'post'
-            // propertyName:
+            method: 'post',
+            //
+            propertyName: 'access_token'
           },
           logout: false,
           user: {
             url: 'user/profile',
             method: 'get',
-            propertyName: false
+            propertyName: false,
+            //
+            appendToken: false
+            //
+            // property: false
           }
         },
         tokenRequired: true
@@ -96,9 +101,14 @@ export default {
       login: '/signin',
       logout: '/signin',
       home: '/',
-      user: 'user/profile',
+      // user: 'user/profile',
+      user: 'profile',
       callback: '/'
-    }
+    },
+    tokenType: 'Bearer',
+    // storageTokenName: 'nuxt-auth-token'
+    // storageTokenName: 'auth._token.local'
+    storageTokenName: '_token_expiration.local'
   },
 
   env: {

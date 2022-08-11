@@ -1,8 +1,8 @@
-import Events from '~/client/events'
+import Posts from '~/client/posts'
 
 export default (context, inject) => {
   const factories = {
-    events: Events(context.$axios)
+    posts: Posts(context.$axios)
   }
 
   // Inject $API
