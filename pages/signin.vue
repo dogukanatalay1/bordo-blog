@@ -81,7 +81,7 @@ export default {
               password: this.password
             }
           })
-          .then(() => this.$router.push({ name: 'test' }))
+          .then(() => this.$router.push({ name: 'index' }))
       } catch (error) {
         this.error = error.response.data.error.message
       }

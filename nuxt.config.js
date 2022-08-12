@@ -74,20 +74,25 @@ export default {
   auth: {
     strategies: {
       local: {
+        token: {
+          property: 'data.access_token',
+          global: true,
+          required: true,
+          type: 'bearer'
+        },
+        user: {
+          property: ''
+        },
         endpoints: {
           login: {
             url: '/user/login',
-            method: 'post',
-            propertyName: 'data.access_token'
+            method: 'post'
           },
           tokenRequired: true,
-          logout: false,
+          logout: { url: 'user/logout', method: 'delete' },
           user: {
             url: '/user/profile',
-            method: 'get',
-            propertyName: 'data',
-            //
-            autoFetch: true
+            method: 'get'
           }
         }
       }

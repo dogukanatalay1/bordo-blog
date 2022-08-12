@@ -5,7 +5,9 @@
       <div
         class="post-card_content_head-subhead d-flex flex-column align-items-start p-0"
       >
-        <span class="post-card_content_head-subhead_subhead">Design</span>
+        <span class="post-card_content_head-subhead_subhead">{{
+          post.title
+        }}</span>
         <div
           class="post-card_content_head-subhead_head-and-text d-flex flex-column align-items-start p-0"
         >
@@ -18,10 +20,12 @@
             <div
               class="post-card_content_head-subhead_head-and-text_head-and-icon_icon-wrap"
             >
-              <ion-icon
-                class="post-card_content_head-subhead_head-and-text_head-and-icon_icon-wrap_icon"
-                name="arrow-forward-outline"
-              />
+              <nuxt-link to="/blogs/:blogid">
+                <ion-icon
+                  class="post-card_content_head-subhead_head-and-text_head-and-icon_icon-wrap_icon"
+                  name="arrow-forward-outline"
+                />
+              </nuxt-link>
             </div>
           </div>
           <p class="post-card_content_head-subhead_head-and-text_text">
@@ -54,19 +58,10 @@
 <script>
 export default {
   name: 'BlogPost',
-  data () {
-    return {
-      posts: []
-    }
-  },
-  created () {
-    // this.getPosts()
-  },
-  methods: {
-    getPosts () {
-      this.$API.posts.getUserPost().then((response) => {
-        this.posts = response.data
-      })
+  props: {
+    post: {
+      type: Object,
+      required: true
     }
   }
 }

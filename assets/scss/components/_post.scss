@@ -88,6 +88,11 @@
               transform: rotate(-45deg);
               color: $sambucus;
               font-size: 24px;
+              transition: ease-in-out 0.3s;
+
+              &:hover {
+                transform: rotate(0deg);
+              }
             }
           }
         }

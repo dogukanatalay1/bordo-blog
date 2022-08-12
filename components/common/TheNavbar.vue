@@ -62,7 +62,11 @@
           >
             Sign up
           </nuxt-link>
-          <button v-if="$auth.loggedIn" class="nav-btn nav-btn-signup">
+          <button
+            v-if="$auth.loggedIn"
+            class="nav-btn nav-btn-signup"
+            @click="$auth.logout()"
+          >
             Log out
           </button>
         </div>

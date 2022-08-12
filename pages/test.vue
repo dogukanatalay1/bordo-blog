@@ -1,7 +1,5 @@
 <template>
-  <div class="">
-    <PostsBlogSection />
-  </div>
+  <div>deneme</div>
 </template>
 
 <script>
