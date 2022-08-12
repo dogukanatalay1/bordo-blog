@@ -80,6 +80,7 @@ export default {
             method: 'post',
             propertyName: 'data.access_token'
           },
+          tokenRequired: true,
           logout: false,
           user: {
             url: '/user/profile',

@@ -55,7 +55,7 @@
           </div>
         </form>
       </div>
-
+      <Notification v-show="error" :message="error" />
       <div
         class="signup-page_content_actions d-flex flex-column align-items-start p-0"
       >
@@ -79,7 +79,8 @@ export default {
       name: '',
       surname: '',
       email: '',
-      password: ''
+      password: '',
+      error: null
     }
   },
   methods: {
@@ -103,6 +104,7 @@ export default {
           .then(this.$auth.loggedIn) // not sure
       } catch (error) {
         window.console.log(error)
+        this.error = error.response.data.error.message
       }
     }
   }

@@ -39,7 +39,7 @@
           </div>
         </form>
       </div>
-
+      <Notification v-show="error" :message="error" />
       <div
         class="signup-page_content_actions d-flex flex-column align-items-start p-0"
       >
@@ -62,7 +62,8 @@ export default {
   data () {
     return {
       email: '',
-      password: ''
+      password: '',
+      error: null
     }
   },
   mounted () {
@@ -82,7 +83,7 @@ export default {
           })
           .then(() => this.$router.push({ name: 'test' }))
       } catch (error) {
-        window.console.log(error.response)
+        this.error = error.response.data.error.message
       }
     }
   }
