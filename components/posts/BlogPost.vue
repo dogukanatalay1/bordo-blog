@@ -64,7 +64,7 @@ export default {
   },
   methods: {
     getPosts () {
-      this.$API.posts.getPosts().then((response) => {
+      this.$API.posts.getUserPost().then((response) => {
         this.posts = response.data
       })
     }

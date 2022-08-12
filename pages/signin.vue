@@ -58,6 +58,7 @@
 <script>
 export default {
   name: 'SignIn',
+  middleware: 'guest',
   data () {
     return {
       email: '',
@@ -79,7 +80,7 @@ export default {
               password: this.password
             }
           })
-          .then(() => this.$router.push({ name: 'index' }))
+          .then(() => this.$router.push({ name: 'test' }))
       } catch (error) {
         window.console.log(error.response)
       }

@@ -6,7 +6,10 @@
 
 <script>
 export default {
-  name: 'TestVue'
+  name: 'TestVue',
+  created () {
+    console.log(this.$auth)
+  }
 }
 </script>
 

@@ -1,12 +1,9 @@
-import Vuex from 'vuex'
+export const getters = {
+  isAuthenticated (state) {
+    return state.auth.loggedIn
+  },
 
-const createStore = () => {
-  return new Vuex.Store({
-    state: {},
-    mutations: {},
-    actions: {},
-    getters: {}
-  })
+  loggedInUser (state) {
+    return state.auth.user
+  }
 }
-
-export default createStore

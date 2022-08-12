@@ -47,6 +47,7 @@
           class="nav_header_container_nav-actions d-flex flex-row align-items-center justify-content-around p-0"
         >
           <nuxt-link
+            v-if="!$auth.loggedIn"
             to="/signin"
             style="text-decoration: none"
             class="nav-btn nav-btn-login"
@@ -54,12 +55,16 @@
             Log in
           </nuxt-link>
           <nuxt-link
+            v-if="!$auth.loggedIn"
             to="/signup"
             style="text-decoration: none"
             class="nav-btn nav-btn-signup"
           >
             Sign up
           </nuxt-link>
+          <button v-if="$auth.loggedIn" class="nav-btn nav-btn-signup">
+            Log out
+          </button>
         </div>
       </div>
     </div>

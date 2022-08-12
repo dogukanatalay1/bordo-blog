@@ -6,5 +6,8 @@ export default axios => ({
   },
   getSinglePost: (postId, parameters = {}) => {
     return axios.get(`posts/${postId}`)
+  },
+  getUsersPost: (parameters = {}) => {
+    return axios.get('post/getAll/my')
   }
 })

@@ -85,7 +85,7 @@ export default {
   methods: {
     async register () {
       try {
-        await this.$axios.post('user/register', {
+        await this.$axios.post('/user/register', {
           email: this.email,
           first_name: this.name,
           last_name: this.surname,

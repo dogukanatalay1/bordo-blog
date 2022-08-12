@@ -64,52 +64,61 @@ export default {
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     //  baseURL: process.env.BROWSER_BASE_URL
-    baseURL: 'https://bordo-blog.herokuapp.com/api/v1/'
+    baseURL: 'https://bordo-blog.herokuapp.com/api/v1'
   },
 
   server: {
-    port: 3001
+    port: 4000
   },
 
   auth: {
     strategies: {
       local: {
         endpoints: {
-          // login propertyName: 'access_token' denenebilir
           login: {
-            url: 'user/login',
+            url: '/user/login',
             method: 'post',
-            //
-            propertyName: 'access_token'
+            propertyName: 'data.access_token'
           },
           logout: false,
           user: {
-            url: 'user/profile',
+            url: '/user/profile',
             method: 'get',
-            propertyName: false
+            propertyName: 'data',
             //
-            // appendToken: false
-            //
-            // property: false
+            autoFetch: true
           }
-        },
-        tokenRequired: true
+        }
       }
-    },
-    rewriteRedirects: false,
-    redirect: {
-      login: '/signin',
-      logout: '/signin',
-      home: '/',
-      // user: 'user/profile',
-      user: 'profile',
-      callback: '/'
-    },
-    tokenType: 'Bearer',
-    // storageTokenName: 'nuxt-auth-token'
-    storageTokenName: 'auth._token.local'
-    // storageTokenName: '_token_expiration.local'
+    }
   },
+
+  // auth: {
+  //   strategies: {
+  //     local: {
+  //       token: {
+  //         property: 'token',
+  //         global: true,
+  //         // required: true,
+  //         // type: 'Bearer',
+  //         propertyName: 'auth._token.local'
+  //       },
+  //       user: {
+  //         property: 'user',
+  //         autoFetch: true
+  //       },
+  //       endpoints: {
+  //         login: {
+  //           url: 'user/login',
+  //           method: 'post',
+  //           propertyName: 'access_token'
+  //         },
+  //         logout: { url: 'user/logout', method: 'post' },
+  //         user: { url: 'user/profile', method: 'get' }
+  //       }
+  //     }
+  //   }
+  // },
 
   env: {
     baseUrl: process.env.BROWSER_BASE_URL
