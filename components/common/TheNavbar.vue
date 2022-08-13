@@ -30,9 +30,13 @@
               Home
             </button>
             <div class="nav-item">
-              <button class="d-flex align-items-center">
-                Products
-              </button>
+              <nuxt-link
+                to="/blogs"
+                style="text-decoration: none"
+                class="nav-item d-flex align-items-center"
+              >
+                Blogs
+              </nuxt-link>
             </div>
             <div class="nav-item">
               <button>Resources</button>
@@ -69,6 +73,13 @@
           >
             Log out
           </button>
+          <nuxt-link
+            v-if="$auth.loggedIn"
+            class="d-flex align-items-center"
+            to="/userprofile"
+          >
+            <ion-icon class="profile-icon" name="person-circle-outline" />
+          </nuxt-link>
         </div>
       </div>
     </div>
@@ -81,4 +92,10 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@import '@/assets/scss/abstracts/_variables.scss';
+.profile-icon {
+  color: $flinstone;
+  font-size: 34px;
+}
+</style>

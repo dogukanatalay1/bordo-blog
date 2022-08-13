@@ -1,16 +1,5 @@
 export default axios => ({
-  getPosts: (parameters = {}) => {
-    return axios.get('posts/', {
-      ...parameters
-    })
-  },
-  getSinglePost: (postId, parameters = {}) => {
-    return axios.get(`posts/${postId}`)
-  },
   getUsersPost: (parameters = {}) => {
-    return axios.get('post/getAll/my')
-  },
-  getPreviewPosts: (parametets = {}) => {
-    return axios.get('/post/getAll/previews')
+    return axios.get('/post/getAll/my')
   }
 })
