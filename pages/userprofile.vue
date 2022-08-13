@@ -1,8 +1,6 @@
 <template>
-  <div class="d-flex flex-column">
-    <span> {{ $auth.user.data.first_name }}</span>
-    <span> {{ $auth.user.data.last_name }}</span>
-    <span> {{ $auth.user.data.email }}</span>
+  <div class="d-flex flex-column justify-content-center align-items-center">
+    <UserProfile />
   </div>
 </template>
 
