@@ -1,10 +1,10 @@
 <template>
-  <div class="col-md-7">
+  <div class="col-md-4">
     <div class="card p-3 py-4">
       <div class="d-flex align-items-center justify-content-center">
         <img
           src="@/static/images/quote.png"
-          width="100"
+          width="120"
           class="rounded-circle"
         >
       </div>
