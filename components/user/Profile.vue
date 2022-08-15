@@ -13,7 +13,7 @@
         <h5 class="mt-2 mb-0">
           Name: {{ $auth.user.data.first_name }} {{ $auth.user.data.last_name }}
         </h5>
-        <span>Role: {{ $auth.user.data.role }}</span>
+        <span>Role: {{ $auth.user.data.roles[0].name }}</span>
 
         <div class="px-4 mt-1">
           <p class="fonts">
@@ -28,10 +28,10 @@
 
         <div class="buttons">
           <button class="btn btn-outline-primary px-4">
-            Message
+            Button
           </button>
           <button class="btn btn-primary px-4 ms-3">
-            Contact
+            Button
           </button>
         </div>
       </div>

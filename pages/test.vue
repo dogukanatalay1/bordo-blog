@@ -1,12 +1,12 @@
 <template>
-  <div>deneme</div>
+  <div>test page</div>
 </template>
 
 <script>
 export default {
   name: 'TestVue',
-  created () {
-    console.log(this.$auth)
+  data () {
+    return {}
   }
 }
 </script>

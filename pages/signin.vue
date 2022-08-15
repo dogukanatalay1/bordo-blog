@@ -10,7 +10,7 @@
         <div
           class="signup-page_content_header_text-and-support d-flex flex-column align-items-start p-0"
         >
-          <span class="signup-page_content_header_text-and-support_text">Create an account</span>
+          <span class="signup-page_content_header_text-and-support_text">Sign in</span>
           <span class="signup-page_content_header_text-and-support_support">Start your 30-day free trial.</span>
         </div>
       </div>
@@ -84,6 +84,7 @@ export default {
           .then(() => this.$router.push({ name: 'index' }))
       } catch (error) {
         this.error = error.response.data.error.message
+        // console.log(error)
       }
     }
   }

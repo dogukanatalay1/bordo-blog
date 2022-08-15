@@ -19,6 +19,7 @@ export default {
     getUsersPost () {
       this.$API.posts.getUsersPost().then((response) => {
         this.posts = response.data.data
+        console.log(response)
       })
     }
   }

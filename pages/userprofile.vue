@@ -1,5 +1,7 @@
 <template>
-  <div class="d-flex flex-column justify-content-center align-items-center">
+  <div
+    class="profile-page d-flex justify-content-center align-items-center p-10"
+  >
     <UserProfile />
     <PostsPostForm />
   </div>
@@ -14,4 +16,10 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@media screen and (max-width: 992px) {
+  .profile-page {
+    flex-direction: column;
+  }
+}
+</style>

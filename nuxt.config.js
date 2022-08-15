@@ -85,13 +85,13 @@ export default {
         },
         endpoints: {
           login: {
-            url: '/user/login',
+            url: '/users/login',
             method: 'post'
           },
           tokenRequired: true,
-          logout: { url: 'user/logout', method: 'delete' },
+          logout: { url: 'users/logout', method: 'delete' },
           user: {
-            url: '/user/profile',
+            url: '/users/profile',
             method: 'get'
           }
         }
