@@ -15,7 +15,11 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['@/assets/css/bootstrap.min.css', '@/assets/scss/main.scss'],
+  css: [
+    '@/assets/css/bootstrap.min.css',
+    '@/assets/scss/main.scss',
+    '@/assets/scss/abstracts/_variables.scss'
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [{ src: '~/plugins/api.js' }, { src: '~/plugins/axios.js' }],

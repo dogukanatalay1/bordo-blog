@@ -1,13 +1,10 @@
 <template>
-  <div><TagsTagInput /></div>
+  <div />
 </template>
 
 <script>
 export default {
-  name: 'TestVue',
-  data () {
-    return {}
-  }
+  name: 'TagInput'
 }
 </script>
 

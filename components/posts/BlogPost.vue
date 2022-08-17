@@ -20,12 +20,27 @@
             <div
               class="post-card_content_head-subhead_head-and-text_head-and-icon_icon-wrap"
             >
-              <nuxt-link :to="`${post.title}`">
+              <!------>
+              <!-- <nuxt-link :to="`/blogs/:${post.title}`">
+                <ion-icon
+                  class="post-card_content_head-subhead_head-and-text_head-and-icon_icon-wrap_icon"
+                  name="arrow-forward-outline"
+                />
+              </nuxt-link> -->
+              <!------>
+              <nuxt-link
+                class="post-card_content_head-subhead_head-and-text_head-and-icon_icon-wrap_icon"
+                :to="{
+                  name: 'blogs-blogid',
+                  params: { blogid: post.title, postId: post._id }
+                }"
+              >
                 <ion-icon
                   class="post-card_content_head-subhead_head-and-text_head-and-icon_icon-wrap_icon"
                   name="arrow-forward-outline"
                 />
               </nuxt-link>
+              <!------>
             </div>
           </div>
           <p class="post-card_content_head-subhead_head-and-text_text">

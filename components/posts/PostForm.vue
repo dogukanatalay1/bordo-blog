@@ -60,11 +60,14 @@ export default {
       title: '',
       description: '',
       content: '',
-      tags: []
+      tags: [],
+      tag: ''
     }
   },
   methods: {
     createPost () {
+      this.tags.push(this.tag)
+
       const data = {
         title: this.title,
         description: this.description,
