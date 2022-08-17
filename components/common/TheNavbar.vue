@@ -14,7 +14,9 @@
           >
             <div class="nav_header_container_content_logo_logo-wrap">
               <h5 class="nav_header_container_content_logo_logo-wrap_logotype">
-                { }Bordo Blog
+                <nuxt-link to="/">
+                  { }Bordo Blog
+                </nuxt-link>
               </h5>
 
               <div
@@ -80,6 +82,17 @@
           >
             <ion-icon class="profile-icon" name="person-circle-outline" />
           </nuxt-link>
+          <nuxt-link
+            v-if="$auth.loggedIn"
+            to="/dashboard"
+            class="d-flex align-items-center"
+          >
+            <ion-icon
+              style="font-size: 26px"
+              class="profile-icon"
+              name="bar-chart-outline"
+            />
+          </nuxt-link>
         </div>
       </div>
     </div>
@@ -88,7 +101,12 @@
 
 <script>
 export default {
-  name: 'TheNavbar'
+  name: 'TheNavbar',
+  data () {
+    return {
+      data: ' v-if="$auth.user.data.roles[0].name == Admin"'
+    }
+  }
 }
 </script>
 

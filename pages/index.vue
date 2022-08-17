@@ -15,8 +15,8 @@
 export default {
   name: 'IndexPage',
   created () {
-    console.log(this.$auth.loggedIn)
-    console.log(this.$auth.user)
+    // console.log(this.$auth.loggedIn)
+    // console.log(this.$auth.user.data.roles[0].name)
   }
 }
 </script>

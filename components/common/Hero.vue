@@ -1,9 +1,9 @@
 <template>
   <section class="hero d-flex flex-column align-items-center">
     <!-- NAVBAR -->
-    <CommonTheNavbar />
+    <!-- <CommonTheNavbar /> -->
     <!-- HEADİNG -->
-    <div class="hero_header-container d-flex flex-row align-items-start">
+    <div class="hero_header-container d-flex flex-row align-items-start mt-5">
       <div
         class="hero_header-container_content d-flex flex-column align-items-start p-0"
       >
@@ -62,6 +62,4 @@ export default {
 }
 </script>
 class="card"
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

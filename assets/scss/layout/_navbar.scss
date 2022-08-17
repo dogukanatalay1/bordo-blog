@@ -47,8 +47,11 @@
 
           &_logo-wrap {
             &_logotype {
-              color: $sambucus;
-              width: 130px;
+              a {
+                color: $sambucus;
+                width: 130px;
+                text-decoration: none;
+              }
             }
           }
         }

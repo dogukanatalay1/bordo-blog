@@ -1,13 +1,10 @@
 <template>
-  <div><DashboardUserInfo /></div>
+  <div class="user-info" />
 </template>
 
 <script>
 export default {
-  name: 'TestVue',
-  data () {
-    return {}
-  }
+  name: 'UserInfo'
 }
 </script>
 

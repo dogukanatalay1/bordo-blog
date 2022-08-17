@@ -18,8 +18,8 @@ export default {
   methods: {
     getUsersPost () {
       this.$API.posts.getUsersPost().then((response) => {
+        // console.log(response)
         this.posts = response.data.data
-        console.log(response)
       })
     }
   }
@@ -30,5 +30,6 @@ export default {
 .section {
   height: 100vh;
   width: 100%;
+  flex-wrap: wrap;
 }
 </style>
