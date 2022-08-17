@@ -15,7 +15,7 @@
             <div class="nav_header_container_content_logo_logo-wrap">
               <h5 class="nav_header_container_content_logo_logo-wrap_logotype">
                 <nuxt-link to="/">
-                  { }Bordo Blog
+                  Bordo Blog
                 </nuxt-link>
               </h5>
 

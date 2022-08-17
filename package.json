@@ -20,6 +20,7 @@
     "core-js": "^3.19.3",
     "moment": "^2.29.4",
     "nuxt": "^2.15.8",
+    "tiptap-vuetify": "^2.24.0",
     "vue": "^2.6.14",
     "vue-server-renderer": "^2.6.14",
     "vue-template-compiler": "^2.6.14",
@@ -30,11 +31,13 @@
     "@nuxtjs/eslint-config": "^8.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/tailwindcss": "^4.2.1",
+    "@nuxtjs/vuetify": "^1.12.3",
+    "deepmerge": "^4.2.2",
     "eslint": "^8.4.1",
     "eslint-plugin-nuxt": "^3.1.0",
     "eslint-plugin-vue": "^8.2.0",
     "postcss": "^8.4.4",
-    "sass": "^1.54.0",
-    "sass-loader": "^10.0.1"
+    "sass": "~1.32",
+    "sass-loader": "^10.3.1"
   }
 }
