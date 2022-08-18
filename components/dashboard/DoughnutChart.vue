@@ -7,8 +7,6 @@
     :plugins="plugins"
     :css-classes="cssClasses"
     :styles="styles"
-    :width="width"
-    :height="height"
   />
 </template>
 
@@ -40,16 +38,8 @@ export default {
       type: String,
       default: 'label'
     },
-    width: {
-      type: Number,
-      default: 400
-    },
-    height: {
-      type: Number,
-      default: 400
-    },
     cssClasses: {
-      default: '',
+      default: 'doughnut',
       type: String
     },
     styles: {
@@ -59,24 +49,48 @@ export default {
     plugins: {
       type: Array,
       default: () => []
+    },
+    tag: {
+      type: Object,
+      default: () => {}
+    },
+    color: {
+      type: String,
+      default: '#000000'
     }
   },
   data () {
     return {
       chartData: {
-        labels: ['VueJs', 'EmberJs', 'ReactJs', 'AngularJs'],
+        // labels: ['VueJs', 'EmberJs', 'ReactJs', 'AngularJs'],
+        // labels: this.tags,
         datasets: [
           {
-            backgroundColor: ['#41B883', '#E46651', '#00D8FF', '#DD1B16'],
-            data: [40, 20, 80, 10]
+            // backgroundColor: ['#41B883', '#E46651', '#00D8FF', '#DD1B16'],
+            // backgroundColor: ['black'],
+            backgroundColor: [this.color, '#E2FBD7'],
+            data: [this.tag.percentile, 100 - this.tag.percentile]
           }
         ]
       },
       chartOptions: {
         responsive: true,
-        maintainAspectRatio: false
+        maintainAspectRatio: false,
+        cutout: 44
       }
     }
+  },
+  methods: {
+    opacity (color) {}
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.doughnut {
+  width: 126px;
+  height: 126px;
+
+  border: none;
+}
+</style>

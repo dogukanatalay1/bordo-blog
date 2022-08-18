@@ -17,6 +17,8 @@ export default {
   methods: {
     createPost () {
       const data = {
+        cover_image:
+          'https://ktucectest.herokuapp.com/media/events/SaveYourTearseventalbum/311.jpg',
         title: 'denemeeeeeeeeee',
         description: 'asoıdjyugdsaudgshayuas',
         content: this.info,
