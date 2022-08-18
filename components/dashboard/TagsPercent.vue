@@ -68,6 +68,9 @@ export default {
 }
 
 .chart {
+}
+
+.chart-div {
   margin: 20px;
 }
 

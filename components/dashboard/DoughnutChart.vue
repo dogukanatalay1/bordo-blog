@@ -75,12 +75,10 @@ export default {
         responsive: true,
         maintainAspectRatio: false,
         cutout: 44,
-        borderRadius: 27
+        borderRadius: 27,
+        backgroundColor: '#E2FBD7'
       }
     }
-  },
-  methods: {
-    opacity (color) {}
   }
 }
 </script>
