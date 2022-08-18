@@ -66,8 +66,6 @@ export default {
         // labels: this.tags,
         datasets: [
           {
-            // backgroundColor: ['#41B883', '#E46651', '#00D8FF', '#DD1B16'],
-            // backgroundColor: ['black'],
             backgroundColor: [this.color, '#E2FBD7'],
             data: [this.tag.percentile, 100 - this.tag.percentile]
           }
@@ -76,7 +74,8 @@ export default {
       chartOptions: {
         responsive: true,
         maintainAspectRatio: false,
-        cutout: 44
+        cutout: 44,
+        borderRadius: 27
       }
     }
   },
@@ -90,7 +89,5 @@ export default {
 .doughnut {
   width: 126px;
   height: 126px;
-
-  border: none;
 }
 </style>
