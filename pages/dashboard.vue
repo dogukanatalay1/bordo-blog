@@ -1,5 +1,5 @@
 <template>
-  <div>dashboard page</div>
+  <div><DashboardTagsPercent /></div>
 </template>
 
 <script>

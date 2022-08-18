@@ -3,7 +3,6 @@
     class="profile-page d-flex justify-content-center align-items-center p-10"
   >
     <UserProfile />
-    <PostsPostForm />
   </div>
 </template>
 

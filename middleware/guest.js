@@ -7,3 +7,5 @@ export default function ({
     return redirect('/')
   }
 }
+
+// code is not running correct

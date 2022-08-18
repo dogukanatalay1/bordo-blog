@@ -1,10 +1,17 @@
 <template>
-  <div />
+  <div>
+    <div class="chart-div">
+      <DashboardDoughnutChart />
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'TagsPercent'
+  name: 'TagsPercent',
+  data () {
+    return {}
+  }
 }
 </script>
 

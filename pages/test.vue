@@ -2,7 +2,7 @@
   <section>
     <TexteditorEditor v-model="info" class="mt-5" />
     <div>{{ info }}</div>
-    <button class="btn btn-primary" @click="createPost()">
+    <button class="btn btn-primary ml-5" @click="createPost()">
       Save
     </button>
   </section>
