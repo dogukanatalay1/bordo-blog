@@ -74,7 +74,7 @@ export default {
       chartOptions: {
         responsive: true,
         maintainAspectRatio: false,
-        cutout: 44,
+        cutout: 45,
         borderRadius: 27,
         backgroundColor: '#E2FBD7'
       }

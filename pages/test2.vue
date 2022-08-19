@@ -17,9 +17,9 @@ export default {
     getUsersPost () {
       this.$API.posts.getUsersPost().then((response) => {
         // console.log(response.data.data[7])
-        this.post = response.data.data[0].content
+        this.post = response.data.data[3].content
 
-        document.querySelector('.post').innerHTML += `${this.post}`
+        document.querySelector('.post').innerHTML += this.post
       })
     }
   }

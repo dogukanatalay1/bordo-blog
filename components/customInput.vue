@@ -21,10 +21,6 @@ export default {
     type: {
       type: String,
       default: 'text'
-    },
-    cmc: {
-      type: Number,
-      default: 0
     }
   },
   data () {

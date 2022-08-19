@@ -10,7 +10,7 @@ export default {
   data () {
     return {
       id: this.$route.params,
-      post: {}
+      post: null
     }
   },
   created () {
@@ -20,7 +20,7 @@ export default {
   methods: {
     getSingleUsersPost (Id) {
       this.$API.posts.getSingleUsersPost(Id).then((response) => {
-        // console.log(response.data.data)
+        console.log(response.data.data)
         this.post = response.data.data
       })
     }

@@ -56,14 +56,17 @@ export default {
       brands: true
     }
   },
-
+  // -
+  // Runtime config allows passing dynamic config and environment variables to the nuxt context.
   publicRuntimeConfig: {
+    // server and client both using
     axios: {
       browserBaseURL: process.env.BROWSER_BASE_URL
     }
   },
 
   privateRuntimeConfig: {
+    // server only, overrides publidRuntimeConfig
     axios: {
       baseURL: process.env.BASE_URL
     }

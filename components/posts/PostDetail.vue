@@ -1,6 +1,6 @@
 <template>
-  <div>
-    {{ post }}
+  <div class="detail-component">
+    <div class="detail" />
   </div>
 </template>
 
@@ -11,6 +11,15 @@ export default {
     post: {
       type: Object,
       required: true
+    }
+  },
+  created () {
+    this.addContent()
+    console.log(this.post)
+  },
+  methods: {
+    addContent () {
+      document.querySelector('.detail').innerHTML += this.post.content
     }
   }
 }

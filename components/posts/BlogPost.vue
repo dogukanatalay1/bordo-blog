@@ -1,6 +1,11 @@
 <template>
   <div class="post-card d-flex flex-column align-items-start p-0">
-    <img class="post-card_img" src="@/static/images/blog.png" alt="">
+    <!-- <img class="post-card_img" src="@/static/images/blog.png" alt=""> -->
+    <img
+      class="post-card_img"
+      :src="`http://bordo-blog.herokuapp.com/public${post.cover_image}`"
+      alt=""
+    >
     <div class="post-card_content d-flex flex-column align-items-start p-0">
       <div
         class="post-card_content_head-subhead d-flex flex-column align-items-start p-0"
@@ -56,6 +61,10 @@
           src="@/static/images/quote.png"
           alt=""
         >
+        <!-- <img
+          :src="`http://bordo-blog.herokuapp.com/public${post.writer.avatar}`"
+          alt=""
+        > -->
         <div class="post-card_content_avatar-container_name-and-date">
           <p class="post-card_content_avatar-container_name-and-date_name">
             {{ post.writer.first_name }} {{ post.writer.last_name }}

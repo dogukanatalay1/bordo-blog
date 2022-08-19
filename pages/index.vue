@@ -17,6 +17,7 @@ export default {
   created () {
     // console.log(this.$auth.loggedIn)
     // console.log(this.$auth.user.data.roles[0].name)
+    // console.log(this.$auth.user.data.roles[0].name === 'Admin')
   }
 }
 </script>
