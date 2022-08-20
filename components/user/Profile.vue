@@ -2,10 +2,16 @@
   <div class="col-md-4">
     <div class="card p-3 py-4">
       <div class="d-flex align-items-center justify-content-center">
-        <img
+        <!-- <img
           src="@/static/images/quote.png"
           width="120"
           class="rounded-circle"
+        > -->
+        <img
+          class="rounded-circle"
+          :src="`http://bordo-blog.herokuapp.com/public${$auth.user.data.avatar}`"
+          width="120"
+          alt=""
         >
       </div>
 
@@ -41,7 +47,10 @@
 
 <script>
 export default {
-  name: 'ProfileCard'
+  name: 'ProfileCard',
+  created () {
+    console.log(this.$auth.user)
+  }
 }
 </script>
 

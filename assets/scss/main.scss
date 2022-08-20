@@ -13,9 +13,12 @@
 @import '@/assets/scss/components/_blogsection.scss';
 @import '@/assets/scss/components/_profilecard.scss';
 @import '@/assets/scss/components/_postform.scss';
+@import '@/assets/scss/components/userinfo.scss';
+@import '@/assets/scss/components/sidebar.scss';
 
 * {
   margin: 0;
   padding: 0;
   outline: none;
+  box-sizing: border-box;
 }

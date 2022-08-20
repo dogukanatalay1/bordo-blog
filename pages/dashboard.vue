@@ -1,13 +1,14 @@
 <template>
   <div>
     <DashboardTagsPercent />
-    <!-- <DashboardUserInfo /> -->
+    <DashboardUsers />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'DashboardPage'
+  name: 'DashboardPage',
+  layout: 'dashboard'
 }
 </script>
 

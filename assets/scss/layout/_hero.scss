@@ -1,12 +1,12 @@
 @import '@/assets/scss/abstracts/_variables.scss';
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Inter:wght@600&family=Roboto:ital,wght@0,300;0,400;1,400&display=swap');
-  
+
 .hero {
   //padding: 96px 0px 64px;
   gap: 96px;
   //width: 1440px;
   width: 100%;
-  height: 1152px;
+  //height: 1152px;
   flex: none;
   order: 0;
   align-self: stretch;
@@ -18,7 +18,7 @@
     gap: 32px;
     // width: 1280px;
     width: 90%;
-    height: 336px;
+    // height: 336px;
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -27,7 +27,7 @@
       gap: 48px;
       // width: 768px;
       width: 60%;
-      height: 336px;
+      // height: 336px;
       flex: none;
       order: 0;
       align-self: stretch;
@@ -36,7 +36,7 @@
       &_heading {
         gap: 24px;
         // width: 768px;
-        height: 228px;
+        // height: 228px;
         flex: none;
         order: 0;
         align-self: stretch;
@@ -45,7 +45,7 @@
         .heading {
           color: $sambucus;
           // width: 768px;
-          height: 144px;
+          // height: 144px;
           font-family: 'Inter';
           font-style: normal;
           font-weight: 600;
@@ -61,7 +61,7 @@
         .support-text {
           color: $flinstone;
           // width: 768px;
-          height: 60px;
+          // height: 60px;
           /* Text xl/Normal */
           font-family: 'Inter';
           font-style: normal;
@@ -79,7 +79,7 @@
       &_actions {
         gap: 12px;
         // width: 276px;
-        height: 60px;
+        // height: 60px;
         flex: none;
         order: 1;
         flex-grow: 0;
@@ -95,11 +95,11 @@
           flex: none;
           border-radius: 8px;
           box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-          height: 60px;
+          // height: 60px;
         }
 
         .demo-btn {
-          width: 143px;
+          // width: 143px;
           background: #ffffff;
           order: 0;
           border: 1px solid $satin-white;
@@ -126,8 +126,8 @@
           border: 1px solid $bordo;
 
           &-text {
-            width: 65px;
-            height: 28px;
+            //  width: 65px;
+            // height: 28px;
             font-family: 'Inter';
             font-style: normal;
             font-weight: 500;
@@ -139,8 +139,8 @@
             flex-grow: 0;
 
             .play-icon-container {
-              width: 24px;
-              height: 24px;
+              // width: 24px;
+              //height: 24px;
               flex: none;
               order: 0;
               flex-grow: 0;
@@ -159,15 +159,16 @@
   &_img-container {
     padding: 0px 32px;
     gap: 32px;
-    width: 1280px;
-    height: 480px;
+    // width: 1280px;
+    // height: 480px;
+    width: 100%;
     flex: none;
     order: 1;
     flex-grow: 0;
 
     &_content {
-      width: 1216px;
-      height: 480px;
+      width: 100%;
+      //height: 480px;
       background: $chefs-hat;
       border-radius: 16px;
       flex: none;
@@ -183,7 +184,7 @@
         bottom: 0px;
         border-radius: 16px;
         height: 608px;
-        width: 1216px;
+        width: 100%;
         overflow: hidden;
 
         .card {

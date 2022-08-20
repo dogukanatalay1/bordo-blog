@@ -68,9 +68,7 @@ export default {
   box-shadow: 2px 2px 2px 1px grey;
   border-radius: 20px;
   display: inline-block;
-}
-
-.chart {
+  background-color: #fff;
 }
 
 .chart-div {
@@ -80,7 +78,6 @@ export default {
 p {
   width: 70%;
 }
-
 .count-input {
   width: 40px;
   border: 1px solid grey;
