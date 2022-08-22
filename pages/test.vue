@@ -1,19 +1,18 @@
 <template>
-  <section>
-    <TexteditorEditor v-model="info" class="mt-5" />
-    <div>{{ info }}</div>
-    <button class="btn btn-primary ml-5" @click="createPost()">
-      Save
-    </button>
+  <section class="d-flex flex-row justify-content-between">
+    <TexteditorEditor v-model="info" style="width: 100%" class="mt-5" />
+    <TexteditorBlogSideForm />
   </section>
 </template>
 
 <script>
 export default {
   name: 'TestPage',
-  data: () => ({
-    info: ''
-  }),
+  data () {
+    return {
+      info: ''
+    }
+  },
   methods: {
     createPost () {
       const data = {

@@ -56,24 +56,11 @@
 export default {
   name: 'PostForm',
   data () {
-    return {
-      title: '',
-      description: '',
-      content: '',
-      tags: [],
-      tag: ''
-    }
+    return {}
   },
   methods: {
     createPost () {
-      this.tags.push(this.tag)
-
-      const data = {
-        title: this.title,
-        description: this.description,
-        content: this.content,
-        tags: this.tags
-      }
+      const data = {}
       this.$API.posts.createPost({ ...data }).then(() => {
         this.$router.push({ name: 'blogs' })
       })

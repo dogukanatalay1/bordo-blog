@@ -1,27 +1,16 @@
 <template>
-  <div class="post" />
+  <div class="post">
+    <Tagtest />
+  </div>
 </template>
 
 <script>
+import Tagtest from '../components/tags/tagtest.vue'
 export default {
   name: 'TestC',
+  components: { Tagtest },
   data () {
-    return {
-      post: {}
-    }
-  },
-  created () {
-    this.getUsersPost()
-  },
-  methods: {
-    getUsersPost () {
-      this.$API.posts.getUsersPost().then((response) => {
-        // console.log(response.data.data[7])
-        this.post = response.data.data[3].content
-
-        document.querySelector('.post').innerHTML += this.post
-      })
-    }
+    return {}
   }
 }
 </script>

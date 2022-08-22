@@ -13,8 +13,6 @@
         >
           <ion-icon :style="{ color: colors[i] }" name="ellipse" />
           <span class="mr-3"> {{ tag.tag.name }}</span>
-
-          <!-- {{ tag.percentile }} -->
         </div>
       </div>
       <div class="chart-div d-flex">
