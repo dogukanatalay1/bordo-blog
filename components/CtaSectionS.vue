@@ -1,13 +1,31 @@
 <template>
   <section
-    class="cta-second d-flex flex-column justify-content-center align-items-center"
+    class="
+      cta-second
+      d-flex
+      flex-column
+      justify-content-center
+      align-items-center
+    "
   >
     <div class="cta-second_container d-flex flex-column align-items-start">
       <div
-        class="cta-second_container_content d-flex flex-row justify-content-between align-items-start"
+        class="
+          cta-second_container_content
+          d-flex
+          flex-row
+          justify-content-between
+          align-items-start
+        "
       >
         <div
-          class="cta-second_container_content_head-and-support d-flex flex-column align-items-start p-0"
+          class="
+            cta-second_container_content_head-and-support
+            d-flex
+            flex-column
+            align-items-start
+            p-0
+          "
         >
           <p class="cta-second_container_content_head-and-support_heading">
             Start your 30-day free trial
@@ -17,10 +35,22 @@
           </p>
         </div>
         <div
-          class="cta-second_container_content_actions d-flex flex-row align-items-start p-0"
+          class="
+            cta-second_container_content_actions
+            d-flex
+            flex-row
+            align-items-start
+            p-0
+          "
         >
           <button
-            class="cta-second_container_content_actions_btn d-flex flex-row justify-content-center align-items-center"
+            class="
+              cta-second_container_content_actions_btn
+              d-flex
+              flex-row
+              justify-content-center
+              align-items-center
+            "
           >
             Learn more
           </button>

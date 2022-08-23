@@ -1,104 +1,62 @@
 .cta-second {
-  padding: 0px 0px 96px;
   width: 100%;
-  height: 308px;
   background: #ffffff;
-  flex: none;
-  align-self: stretch;
   order: 8;
-  flex-grow: 0;
+  font-family: 'Inter';
+  font-style: normal;
 
   &_container {
     padding: 0px 32px;
     gap: 32px;
-    width: 1280px;
-    height: 212px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 
     &_content {
       padding: 64px;
       gap: 32px;
-      width: 1216px;
-      height: 212px;
+
       background: $bordo;
       border-radius: 16px;
-      flex: none;
-      order: 0;
-      align-self: stretch;
-      flex-grow: 0;
 
       &_head-and-support {
         gap: 16px;
-        width: 768px;
-        height: 84px;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
 
         &_heading {
-          width: 768px;
-          height: 38px;
-          font-family: 'Inter';
-          font-style: normal;
           font-weight: 600;
           font-size: 30px;
           line-height: 38px;
           color: #ffffff;
-          flex: none;
-          order: 0;
-          align-self: stretch;
-          flex-grow: 0;
         }
 
         &_support-text {
-          width: 768px;
-          height: 30px;
-          font-family: 'Inter';
-          font-style: normal;
           font-weight: 400;
           font-size: 20px;
           line-height: 30px;
           color: $lavender-savor;
-          flex: none;
-          order: 1;
-          align-self: stretch;
-          flex-grow: 0;
         }
       }
 
       &_actions {
         gap: 12px;
-        width: 267px;
-        height: 48px;
-        flex: none;
-        order: 1;
-        flex-grow: 0;
 
         &_btn {
-          box-sizing: border-box;
-          padding: 12px 20px;
+          padding: 10px 12px;
           gap: 8px;
-          width: 127px;
-          height: 48px;
           background: #ffffff;
           border: 1px solid #d0d5dd;
           box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
           border-radius: 8px;
-          flex: none;
-          order: 0;
-          flex-grow: 0;
 
           &:nth-child(2) {
             background: $bordo;
-            order: 1;
-            width: 128px;
             color: white;
             background-color: lighten($color: $bordo, $amount: 7);
           }
         }
       }
     }
+  }
+}
+@media screen and (max-width: 992px) {
+  .cta-second_container_content {
+    flex-direction: column !important;
   }
 }
