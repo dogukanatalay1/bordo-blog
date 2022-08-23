@@ -2,20 +2,38 @@
   <div class="signup-page d-flex flex-column align-items-center">
     <div class="signup-page_content d-flex flex-column align-items-center p-0">
       <div
-        class="signup-page_content_header d-flex flex-column align-items-center p-0"
+        class="
+          signup-page_content_header
+          d-flex
+          flex-column
+          align-items-center
+          p-0
+        "
       >
         <div class="signup-page_content_header_logo-mark">
           { }
         </div>
         <div
-          class="signup-page_content_header_text-and-support d-flex flex-column align-items-start p-0"
+          class="
+            signup-page_content_header_text-and-support
+            d-flex
+            flex-column
+            align-items-start
+            p-0
+          "
         >
           <span class="signup-page_content_header_text-and-support_text">Create an account</span>
           <span class="signup-page_content_header_text-and-support_support">Start your 30-day free trial.</span>
         </div>
       </div>
       <div
-        class="signup-page_content_form-container d-flex flex-column align-items-center p-0"
+        class="
+          signup-page_content_form-container
+          d-flex
+          flex-column
+          align-items-center
+          p-0
+        "
       >
         <form
           class="signup-page_content_form-container_form"
@@ -57,7 +75,13 @@
       </div>
       <Notification v-show="error" :message="error" />
       <div
-        class="signup-page_content_actions d-flex flex-column align-items-start p-0"
+        class="
+          signup-page_content_actions
+          d-flex
+          flex-column
+          align-items-start
+          p-0
+        "
       >
         <button
           type="submit"
@@ -110,5 +134,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped></style>

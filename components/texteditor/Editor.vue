@@ -1,7 +1,7 @@
 <template>
   <div class="ml-5">
     <tiptap-vuetify
-      style="width: 50%"
+      style="width: 100%; max-width: 1000px"
       :value="value"
       :extensions="extensions"
       @input="$emit('input', arguments[0])"

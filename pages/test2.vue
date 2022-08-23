@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Tagtest from '../components/tags/tagtest.vue'
+import Tagtest from '../components/tags/TagList.vue'
 export default {
   name: 'TestC',
   components: { Tagtest },
