@@ -1,66 +1,35 @@
 .cta {
   padding: 96px 0px;
   gap: 64px;
-  //width: 1440px;
   width: 100%;
-  height: 374px;
   background: $dr-white;
-  flex: none;
+  font-family: 'Inter';
+  font-style: normal;
   order: 4;
-  align-self: stretch;
-  flex-grow: 0;
 
   &_container {
     padding: 0px 32px;
     gap: 32px;
-    width: 1280px;
-    height: 182px;
-    flex: none;
-    flex-grow: 0;
 
     &_content {
       gap: 40px;
-      width: 1216px;
-      height: 182px;
-      flex: none;
-      align-self: stretch;
-      flex-grow: 0;
-
       &_head-supp {
         gap: 20px;
-        width: 768px;
-        height: 94px;
-        flex: none;
-        flex-grow: 0;
 
         &_heading {
-          width: 768px;
-          height: 44px;
-          font-family: 'Inter';
-          font-style: normal;
           font-weight: 600;
           font-size: 36px;
           line-height: 44px;
           text-align: center;
           letter-spacing: -0.02em;
           color: $sambucus;
-          flex: none;
-          align-self: stretch;
-          flex-grow: 0;
         }
         &_support-text {
-          width: 768px;
-          height: 30px;
-          font-family: 'Inter';
-          font-style: normal;
           font-weight: 400;
           font-size: 20px;
           line-height: 30px;
           text-align: center;
           color: $flinstone;
-          flex: none;
-          align-self: stretch;
-          flex-grow: 0;
 
           .bold-text {
             color: $bordo;
@@ -70,20 +39,13 @@
       }
       &_actions {
         gap: 12px;
-        width: 267px;
-        height: 48px;
-        flex: none;
-        flex-grow: 0;
 
         &_btn {
           padding: 12px 20px;
           gap: 8px;
-          width: 127px;
-          height: 48px;
+
           box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
           border-radius: 8px;
-          flex: none;
-          flex-grow: 0;
         }
         .btn-1 {
           background: #ffffff;
