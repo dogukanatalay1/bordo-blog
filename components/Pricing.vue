@@ -2,10 +2,22 @@
   <section class="pricing-section d-flex flex-column align-items-center">
     <div class="pricing-section_heading d-flex flex-column align-items-start">
       <div
-        class="pricing-section_heading_content d-flex flex-column align-items-start p-0"
+        class="
+          pricing-section_heading_content
+          d-flex
+          flex-column
+          align-items-start
+          p-0
+        "
       >
         <div
-          class="pricing-section_heading_content_head-support-container d-flex flex-column align-items-start p-0"
+          class="
+            pricing-section_heading_content_head-support-container
+            d-flex
+            flex-column
+            align-items-start
+            p-0
+          "
         >
           <div
             class="pricing-section_heading_content_head-support-container_head"
@@ -17,7 +29,9 @@
               Pricing as simple as our cards
             </p>
             <p
-              class="pricing-section_heading_content_head-support-container_support"
+              class="
+                pricing-section_heading_content_head-support-container_support
+              "
             >
               Simple, transparent pricing that grows with you. Try any plan free
               for 30 days.
@@ -28,36 +42,70 @@
     </div>
     <div class="pricing-section_content d-flex flex-row align-items-center">
       <div
-        class="pricing-section_content_left-container d-flex flex-column align-items-start p-0"
+        class="
+          pricing-section_content_left-container
+          d-flex
+          flex-column
+          align-items-start
+          p-0
+        "
       >
         <div
-          class="pricing-section_content_left-container_feature-text d-flex flex-row align-items-start p-0 order-0"
+          class="
+            pricing-section_content_left-container_feature-text
+            d-flex
+            flex-row
+            align-items-start
+            p-0
+            order-0
+          "
         >
           <div
-            class="pricing-section_content_left-container_feature-text_featured-icon"
+            class="
+              pricing-section_content_left-container_feature-text_featured-icon
+            "
           >
             <div
-              class="pricing-section_content_left-container_feature-text_featured-icon_icon-circle"
+              class="
+                pricing-section_content_left-container_feature-text_featured-icon_icon-circle
+              "
             >
               <ion-icon
-                class="pricing-section_content_left-container_feature-text_featured-icon_icon-circle_icon"
+                class="
+                  pricing-section_content_left-container_feature-text_featured-icon_icon-circle_icon
+                "
                 name="chatbubbles-outline"
               />
             </div>
           </div>
           <div
-            class="pricing-section_content_left-container_feature-text_content d-flex flex-column align-items-start p-0"
+            class="
+              pricing-section_content_left-container_feature-text_content
+              d-flex
+              flex-column
+              align-items-start
+              p-0
+            "
           >
             <div
-              class="pricing-section_content_left-container_feature-text_content_text-support d-flex flex-column align-items-start"
+              class="
+                pricing-section_content_left-container_feature-text_content_text-support
+                d-flex
+                flex-column
+                align-items-start
+              "
             >
               <span
-                class="pricing-section_content_left-container_feature-text_content_text-support_text"
+                class="
+                  pricing-section_content_left-container_feature-text_content_text-support_text
+                "
               >
                 Share team inboxes
               </span>
               <span
-                class="pricing-section_content_left-container_feature-text_content_text-support_support"
+                class="
+                  pricing-section_content_left-container_feature-text_content_text-support_support
+                "
               >
                 Whether you have a team of 2 or 200, our shared team inboxes
                 keep everyone on the same page and in the loop.
@@ -66,33 +114,61 @@
           </div>
         </div>
         <div
-          class="pricing-section_content_left-container_feature-text d-flex flex-row align-items-start p-0 order-1"
+          class="
+            pricing-section_content_left-container_feature-text
+            d-flex
+            flex-row
+            align-items-start
+            p-0
+            order-1
+          "
         >
           <div
-            class="pricing-section_content_left-container_feature-text_featured-icon"
+            class="
+              pricing-section_content_left-container_feature-text_featured-icon
+            "
           >
             <div
-              class="pricing-section_content_left-container_feature-text_featured-icon_icon-circle"
+              class="
+                pricing-section_content_left-container_feature-text_featured-icon_icon-circle
+              "
             >
               <ion-icon
-                class="pricing-section_content_left-container_feature-text_featured-icon_icon-circle_icon"
+                class="
+                  pricing-section_content_left-container_feature-text_featured-icon_icon-circle_icon
+                "
                 name="flash-outline"
               />
             </div>
           </div>
           <div
-            class="pricing-section_content_left-container_feature-text_content d-flex flex-column align-items-start p-0"
+            class="
+              pricing-section_content_left-container_feature-text_content
+              d-flex
+              flex-column
+              align-items-start
+              p-0
+            "
           >
             <div
-              class="pricing-section_content_left-container_feature-text_content_text-support d-flex flex-column align-items-start"
+              class="
+                pricing-section_content_left-container_feature-text_content_text-support
+                d-flex
+                flex-column
+                align-items-start
+              "
             >
               <span
-                class="pricing-section_content_left-container_feature-text_content_text-support_text"
+                class="
+                  pricing-section_content_left-container_feature-text_content_text-support_text
+                "
               >
                 Share team inboxes
               </span>
               <span
-                class="pricing-section_content_left-container_feature-text_content_text-support_support"
+                class="
+                  pricing-section_content_left-container_feature-text_content_text-support_support
+                "
               >
                 Whether you have a team of 2 or 200, our shared team inboxes
                 keep everyone on the same page and in the loop.
@@ -101,33 +177,61 @@
           </div>
         </div>
         <div
-          class="pricing-section_content_left-container_feature-text d-flex flex-row align-items-start p-0 order-2"
+          class="
+            pricing-section_content_left-container_feature-text
+            d-flex
+            flex-row
+            align-items-start
+            p-0
+            order-2
+          "
         >
           <div
-            class="pricing-section_content_left-container_feature-text_featured-icon"
+            class="
+              pricing-section_content_left-container_feature-text_featured-icon
+            "
           >
             <div
-              class="pricing-section_content_left-container_feature-text_featured-icon_icon-circle"
+              class="
+                pricing-section_content_left-container_feature-text_featured-icon_icon-circle
+              "
             >
               <ion-icon
-                class="pricing-section_content_left-container_feature-text_featured-icon_icon-circle_icon"
+                class="
+                  pricing-section_content_left-container_feature-text_featured-icon_icon-circle_icon
+                "
                 name="bar-chart-outline"
               />
             </div>
           </div>
           <div
-            class="pricing-section_content_left-container_feature-text_content d-flex flex-column align-items-start p-0"
+            class="
+              pricing-section_content_left-container_feature-text_content
+              d-flex
+              flex-column
+              align-items-start
+              p-0
+            "
           >
             <div
-              class="pricing-section_content_left-container_feature-text_content_text-support d-flex flex-column align-items-start"
+              class="
+                pricing-section_content_left-container_feature-text_content_text-support
+                d-flex
+                flex-column
+                align-items-start
+              "
             >
               <span
-                class="pricing-section_content_left-container_feature-text_content_text-support_text"
+                class="
+                  pricing-section_content_left-container_feature-text_content_text-support_text
+                "
               >
                 Share team inboxes
               </span>
               <span
-                class="pricing-section_content_left-container_feature-text_content_text-support_support"
+                class="
+                  pricing-section_content_left-container_feature-text_content_text-support_support
+                "
               >
                 Whether you have a team of 2 or 200, our shared team inboxes
                 keep everyone on the same page and in the loop.
@@ -137,26 +241,60 @@
         </div>
       </div>
       <div
-        class="pricing-section_content_pricing-card d-flex flex-column align-items-start p-0"
+        class="
+          pricing-section_content_pricing-card
+          d-flex
+          flex-column
+          align-items-start
+          p-0
+        "
       >
         <div
-          class="pricing-section_content_pricing-card_header d-flex flex-column align-items-start"
+          class="
+            pricing-section_content_pricing-card_header
+            d-flex
+            flex-column
+            align-items-start
+          "
         >
           <div
-            class="pricing-section_content_pricing-card_header_heading-price d-flex flex-row align-items-start p-0"
+            class="
+              pricing-section_content_pricing-card_header_heading-price
+              d-flex
+              flex-row
+              align-items-start
+              p-0
+            "
           >
             <div
-              class="pricing-section_content_pricing-card_header_heading-price_heading d-flex flex-column align-items-start"
+              class="
+                pricing-section_content_pricing-card_header_heading-price_heading
+                d-flex
+                flex-column
+                align-items-start
+              "
             >
               <div
-                class="pricing-section_content_pricing-card_header_heading-price_heading_h-badge d-flex flex-row align-items-center p-0"
+                class="
+                  pricing-section_content_pricing-card_header_heading-price_heading_h-badge
+                  d-flex
+                  flex-row
+                  align-items-center
+                  p-0
+                "
               >
                 <p class="head">
                   Basic Plan
                 </p>
                 <div class="badge d-flex flex-row align-items-start p-0">
                   <div
-                    class="badge_base d-flex flex-row justify-content-center align-items-center"
+                    class="
+                      badge_base
+                      d-flex
+                      flex-row
+                      justify-content-center
+                      align-items-center
+                    "
                   >
                     <p class="badge_base_text">
                       Popular
@@ -165,24 +303,44 @@
                 </div>
               </div>
               <p
-                class="pricing-section_content_pricing-card_header_heading-price_heading_text"
+                class="
+                  pricing-section_content_pricing-card_header_heading-price_heading_text
+                "
               >
                 Our most popular plan for small teams.
               </p>
             </div>
             <div
-              class="pricing-section_content_pricing-card_header_heading-price_price d-flex flex-row align-items-end p-0"
+              class="
+                pricing-section_content_pricing-card_header_heading-price_price
+                d-flex
+                flex-row
+                align-items-end
+                p-0
+              "
             >
               <div
-                class="pricing-section_content_pricing-card_header_heading-price_price_dollar-wrap d-flex flex-column align-items-start"
+                class="
+                  pricing-section_content_pricing-card_header_heading-price_price_dollar-wrap
+                  d-flex
+                  flex-column
+                  align-items-start
+                "
               >
                 <span class="text">$</span>
               </div>
               <span
-                class="pricing-section_content_pricing-card_header_heading-price_price_price-amount"
+                class="
+                  pricing-section_content_pricing-card_header_heading-price_price_price-amount
+                "
               >10</span>
               <div
-                class="pricing-section_content_pricing-card_header_heading-price_price_period-wrap d-flex flex-row align-items-start"
+                class="
+                  pricing-section_content_pricing-card_header_heading-price_price_period-wrap
+                  d-flex
+                  flex-row
+                  align-items-start
+                "
               >
                 <span class="text">per month</span>
               </div>
@@ -190,113 +348,216 @@
           </div>
         </div>
         <div
-          class="pricing-section_content_pricing-card_content d-flex flex-column align-items-start"
+          class="
+            pricing-section_content_pricing-card_content
+            d-flex
+            flex-column
+            align-items-start
+          "
         >
           <div
-            class="pricing-section_content_pricing-card_content_text-support d-flex flex-column align-items-start p-0"
+            class="
+              pricing-section_content_pricing-card_content_text-support
+              d-flex
+              flex-column
+              align-items-start
+              p-0
+            "
           >
             <p
-              class="pricing-section_content_pricing-card_content_text-support_text"
+              class="
+                pricing-section_content_pricing-card_content_text-support_text
+              "
             >
               Features
             </p>
             <p
-              class="pricing-section_content_pricing-card_content_text-support_support"
+              class="
+                pricing-section_content_pricing-card_content_text-support_support
+              "
             >
               Everything in our free plan plus...
             </p>
           </div>
           <div
-            class="pricing-section_content_pricing-card_content_check-items-wrap d-flex flex-row align-items-start p-0"
+            class="
+              pricing-section_content_pricing-card_content_check-items-wrap
+              d-flex
+              flex-row
+              align-items-start
+              p-0
+            "
           >
             <div
-              class="pricing-section_content_pricing-card_content_check-items-wrap_check-items d-flex flex-column align-items-start p-0 order-0"
+              class="
+                pricing-section_content_pricing-card_content_check-items-wrap_check-items
+                d-flex
+                flex-column
+                align-items-start
+                p-0
+                order-0
+              "
             >
               <div
-                class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item d-flex flex-row align-items-start"
+                class="
+                  pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item
+                  d-flex
+                  flex-row
+                  align-items-start
+                "
               >
                 <div
-                  class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_check-icon"
+                  class="
+                    pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_check-icon
+                  "
                 >
                   <ion-icon class="icon" name="checkmark-outline" />
                 </div>
                 <div
-                  class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap d-flex flex-column align-items-start p-0"
+                  class="
+                    pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap
+                    d-flex
+                    flex-column
+                    align-items-start
+                    p-0
+                  "
                 >
                   <p
-                    class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap_text"
+                    class="
+                      pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap_text
+                    "
                   >
                     Access to basic features
                   </p>
                 </div>
               </div>
               <div
-                class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item d-flex flex-row align-items-start"
+                class="
+                  pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item
+                  d-flex
+                  flex-row
+                  align-items-start
+                "
               >
                 <div
-                  class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_check-icon"
+                  class="
+                    pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_check-icon
+                  "
                 >
                   <ion-icon class="icon" name="checkmark-outline" />
                 </div>
                 <div
-                  class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap d-flex flex-column align-items-start p-0"
+                  class="
+                    pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap
+                    d-flex
+                    flex-column
+                    align-items-start
+                    p-0
+                  "
                 >
                   <p
-                    class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap_text"
+                    class="
+                      pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap_text
+                    "
                   >
                     Basic reporting,analytics
                   </p>
                 </div>
               </div>
               <div
-                class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item d-flex flex-row align-items-start"
+                class="
+                  pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item
+                  d-flex
+                  flex-row
+                  align-items-start
+                "
               >
                 <div
-                  class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_check-icon"
+                  class="
+                    pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_check-icon
+                  "
                 >
                   <ion-icon class="icon" name="checkmark-outline" />
                 </div>
                 <div
-                  class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap d-flex flex-column align-items-start p-0"
+                  class="
+                    pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap
+                    d-flex
+                    flex-column
+                    align-items-start
+                    p-0
+                  "
                 >
                   <p
-                    class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap_text"
+                    class="
+                      pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap_text
+                    "
                   >
                     Up to 10 individual users
                   </p>
                 </div>
               </div>
               <div
-                class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item d-flex flex-row align-items-start"
+                class="
+                  pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item
+                  d-flex
+                  flex-row
+                  align-items-start
+                "
               >
                 <div
-                  class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_check-icon"
+                  class="
+                    pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_check-icon
+                  "
                 >
                   <ion-icon class="icon" name="checkmark-outline" />
                 </div>
                 <div
-                  class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap d-flex flex-column align-items-start p-0"
+                  class="
+                    pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap
+                    d-flex
+                    flex-column
+                    align-items-start
+                    p-0
+                  "
                 >
                   <p
-                    class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap_text"
+                    class="
+                      pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap_text
+                    "
                   >
                     20GB individual data
                   </p>
                 </div>
               </div>
               <div
-                class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item d-flex flex-row align-items-start"
+                class="
+                  pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item
+                  d-flex
+                  flex-row
+                  align-items-start
+                "
               >
                 <div
-                  class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_check-icon"
+                  class="
+                    pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_check-icon
+                  "
                 >
                   <ion-icon class="icon" name="checkmark-outline" />
                 </div>
                 <div
-                  class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap d-flex flex-column align-items-start p-0"
+                  class="
+                    pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap
+                    d-flex
+                    flex-column
+                    align-items-start
+                    p-0
+                  "
                 >
                   <p
-                    class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap_text"
+                    class="
+                      pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap_text
+                    "
                   >
                     Basic chat support
                   </p>
@@ -304,93 +565,175 @@
               </div>
             </div>
             <div
-              class="pricing-section_content_pricing-card_content_check-items-wrap_check-items d-flex flex-column align-items-start p-0 order-1"
+              class="
+                pricing-section_content_pricing-card_content_check-items-wrap_check-items
+                d-flex
+                flex-column
+                align-items-start
+                p-0
+                order-1
+              "
             >
               <div
-                class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item d-flex flex-row align-items-start"
+                class="
+                  pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item
+                  d-flex
+                  flex-row
+                  align-items-start
+                "
               >
                 <div
-                  class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_check-icon"
+                  class="
+                    pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_check-icon
+                  "
                 >
                   <ion-icon class="icon" name="checkmark-outline" />
                 </div>
                 <div
-                  class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap d-flex flex-column align-items-start p-0"
+                  class="
+                    pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap
+                    d-flex
+                    flex-column
+                    align-items-start
+                    p-0
+                  "
                 >
                   <p
-                    class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap_text"
+                    class="
+                      pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap_text
+                    "
                   >
                     Attend events
                   </p>
                 </div>
               </div>
               <div
-                class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item d-flex flex-row align-items-start"
+                class="
+                  pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item
+                  d-flex
+                  flex-row
+                  align-items-start
+                "
               >
                 <div
-                  class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_check-icon"
+                  class="
+                    pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_check-icon
+                  "
                 >
                   <ion-icon class="icon" name="checkmark-outline" />
                 </div>
                 <div
-                  class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap d-flex flex-column align-items-start p-0"
+                  class="
+                    pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap
+                    d-flex
+                    flex-column
+                    align-items-start
+                    p-0
+                  "
                 >
                   <p
-                    class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap_text"
+                    class="
+                      pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap_text
+                    "
                   >
                     Automatic updates
                   </p>
                 </div>
               </div>
               <div
-                class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item d-flex flex-row align-items-start"
+                class="
+                  pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item
+                  d-flex
+                  flex-row
+                  align-items-start
+                "
               >
                 <div
-                  class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_check-icon"
+                  class="
+                    pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_check-icon
+                  "
                 >
                   <ion-icon class="icon" name="checkmark-outline" />
                 </div>
                 <div
-                  class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap d-flex flex-column align-items-start p-0"
+                  class="
+                    pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap
+                    d-flex
+                    flex-column
+                    align-items-start
+                    p-0
+                  "
                 >
                   <p
-                    class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap_text"
+                    class="
+                      pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap_text
+                    "
                   >
                     Backup your account
                   </p>
                 </div>
               </div>
               <div
-                class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item d-flex flex-row align-items-start"
+                class="
+                  pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item
+                  d-flex
+                  flex-row
+                  align-items-start
+                "
               >
                 <div
-                  class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_check-icon"
+                  class="
+                    pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_check-icon
+                  "
                 >
                   <ion-icon class="icon" name="checkmark-outline" />
                 </div>
                 <div
-                  class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap d-flex flex-column align-items-start p-0"
+                  class="
+                    pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap
+                    d-flex
+                    flex-column
+                    align-items-start
+                    p-0
+                  "
                 >
                   <p
-                    class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap_text"
+                    class="
+                      pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap_text
+                    "
                   >
                     Audit log and notes
                   </p>
                 </div>
               </div>
               <div
-                class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item d-flex flex-row align-items-start"
+                class="
+                  pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item
+                  d-flex
+                  flex-row
+                  align-items-start
+                "
               >
                 <div
-                  class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_check-icon"
+                  class="
+                    pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_check-icon
+                  "
                 >
                   <ion-icon class="icon" name="checkmark-outline" />
                 </div>
                 <div
-                  class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap d-flex flex-column align-items-start p-0"
+                  class="
+                    pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap
+                    d-flex
+                    flex-column
+                    align-items-start
+                    p-0
+                  "
                 >
                   <p
-                    class="pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap_text"
+                    class="
+                      pricing-section_content_pricing-card_content_check-items-wrap_check-items_check-item_text-wrap_text
+                    "
                   >
                     Feature requests
                   </p>
@@ -400,16 +743,35 @@
           </div>
         </div>
         <div
-          class="pricing-section_content_pricing-card_footer d-flex flex-column align-items-start"
+          class="
+            pricing-section_content_pricing-card_footer
+            d-flex
+            flex-column
+            align-items-start
+          "
         >
           <div
-            class="pricing-section_content_pricing-card_footer_actions d-flex flex-column align-items-start p-0"
+            class="
+              pricing-section_content_pricing-card_footer_actions
+              d-flex
+              flex-column
+              align-items-start
+              p-0
+            "
           >
             <button
-              class="pricing-section_content_pricing-card_footer_actions_btn d-flex flex-row justify-content-center alitn-items-center"
+              class="
+                pricing-section_content_pricing-card_footer_actions_btn
+                d-flex
+                flex-row
+                justify-content-center
+                alitn-items-center
+              "
             >
               <p
-                class="pricing-section_content_pricing-card_footer_actions_btn_text"
+                class="
+                  pricing-section_content_pricing-card_footer_actions_btn_text
+                "
               >
                 Get Started
               </p>

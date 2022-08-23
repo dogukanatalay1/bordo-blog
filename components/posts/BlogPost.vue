@@ -2,8 +2,9 @@
   <div class="post-card d-flex flex-column align-items-start p-0">
     <!-- <img class="post-card_img" src="@/static/images/blog.png" alt=""> -->
     <img
+      v-if="post.cover_image.url"
       class="post-card_img"
-      :src="`http://bordo-blog.herokuapp.com/public${post.cover_image}`"
+      :src="post.cover_image.url"
       alt=""
     >
     <div class="post-card_content d-flex flex-column align-items-start p-0">
@@ -94,7 +95,8 @@
           alt=""
         > -->
         <img
-          :src="`http://bordo-blog.herokuapp.com/public${post.writer.avatar}`"
+          v-if="post.writer.avatar.url"
+          :src="post.writer.avatar.url"
           alt=""
           class="post-card_content_avatar-container_avatar"
         >

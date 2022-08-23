@@ -12,7 +12,7 @@
             close
             @click:close="selected.splice(i, 1)"
           >
-            {{ selection.name }}
+            # {{ selection.name }}
           </v-chip>
         </v-col>
 
@@ -42,7 +42,7 @@
           <v-list-item-avatar>
             <v-icon :disabled="loading" v-text="item.icon" />
           </v-list-item-avatar>
-          <v-list-item-title v-text="`#${item.name}`" />
+          <v-list-item-title v-text="`${item.name}`" />
         </v-list-item>
       </template>
     </v-list>
