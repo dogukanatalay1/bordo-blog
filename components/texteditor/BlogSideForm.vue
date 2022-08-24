@@ -22,7 +22,7 @@
       <form action="" @submit.prevent="createPost()">
         <div class="side-form_form_form-group">
           <label for="">Cover image</label>
-          <input type="image" height="48">
+          <input type="file" height="48">
         </div>
         <div class="side-form_form_form-group">
           <label for="">Title</label>
