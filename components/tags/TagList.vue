@@ -53,13 +53,15 @@
 
 <script>
 export default {
-  data: () => ({
-    name: 'TagsComponent',
-    items: [],
-    loading: false,
-    search: '',
-    selected: []
-  }),
+  data () {
+    return {
+      name: 'TagsComponent',
+      items: [],
+      loading: false,
+      search: '',
+      selected: []
+    }
+  },
 
   computed: {
     allSelected () {

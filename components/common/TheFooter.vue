@@ -5,7 +5,7 @@
         class="footer_join-section_container d-flex flex-column align-items-start"
       >
         <div
-          class="footer_join-section_container_content d-flex flex-row align-items-start p-0"
+          class="footer_join-section_container_content d-flex flex-row align-items-center p-0"
         >
           <div
             class="footer_join-section_container_content_text-and-support d-flex flex-column align-items-start p-0"
@@ -246,5 +246,3 @@ export default {
   name: 'TheFooter'
 }
 </script>
-
-<style lang="scss" scoped></style>

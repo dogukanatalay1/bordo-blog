@@ -1,7 +1,7 @@
 <template>
   <div>
     <DashboardTagsPercent />
-    <DashboardUsers />
+    <!-- <DashboardUsers /> -->
   </div>
 </template>
 

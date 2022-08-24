@@ -6,34 +6,28 @@
   font-style: normal;
   gap: 96px;
   width: 100%;
-  flex: none;
+
   order: 0;
-  align-self: stretch;
-  flex-grow: 0;
+
   top: 0;
 
   &_header-container {
     padding: 0px 32px;
     gap: 32px;
     width: 90%;
-    flex: none;
+
     order: 0;
-    flex-grow: 0;
 
     &_content {
       gap: 48px;
       width: 60%;
-      flex: none;
+
       order: 0;
-      align-self: stretch;
-      flex-grow: 0;
 
       &_heading {
         gap: 24px;
-        flex: none;
+
         order: 0;
-        align-self: stretch;
-        flex-grow: 0;
 
         .heading {
           color: $sambucus;
@@ -41,28 +35,23 @@
           font-size: 3.75em;
           line-height: 4.68rem;
           letter-spacing: -0.02em;
-          flex: none;
+
           order: 0;
-          align-self: stretch;
-          flex-grow: 0;
         }
         .support-text {
           color: $flinstone;
           font-weight: 400;
           font-size: 20px;
           line-height: 30px;
-          flex: none;
+
           order: 1;
-          align-self: stretch;
-          flex-grow: 0;
         }
       }
 
       &_actions {
         gap: 12px;
-        flex: none;
+
         order: 1;
-        flex-grow: 0;
 
         .action-btn {
           display: flex;
@@ -71,8 +60,7 @@
           align-items: center;
           padding: 16px 28px;
           gap: 12px;
-          flex-grow: 0;
-          flex: none;
+
           border-radius: 8px;
           box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
         }
@@ -87,9 +75,8 @@
             font-size: 18px;
             line-height: 28px;
             color: $black-river-falls;
-            flex: none;
+
             order: 1;
-            flex-grow: 0;
           }
         }
 
@@ -103,14 +90,11 @@
             font-size: 18px;
             line-height: 28px;
             color: #ffffff;
-            flex: none;
+
             order: 1;
-            flex-grow: 0;
 
             .play-icon-container {
-              flex: none;
               order: 0;
-              flex-grow: 0;
 
               .play-icon {
                 position: absolute;
@@ -127,18 +111,15 @@
     padding: 0px 32px;
     gap: 32px;
     width: 100%;
-    flex: none;
+
     order: 1;
-    flex-grow: 0;
 
     &_content {
       width: 100%;
       background: $chefs-hat;
       border-radius: 16px;
-      flex: none;
+
       order: 0;
-      align-self: stretch;
-      flex-grow: 0;
 
       &_cards {
         position: relative;
@@ -215,5 +196,11 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero_header-container_content {
+    width: 95%;
   }
 }
