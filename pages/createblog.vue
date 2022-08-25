@@ -34,7 +34,8 @@
       />
       <div v-if="!isEdit">
         <!-- <div class="blog-view" /> -->
-        <div style="width: 70%" v-html="sanitizeInfo()" />
+        <!-- <div style="width: 70%" v-html="sanitizeInfo()" /> -->
+        <div @load="sanitizeInfo()" />
       </div>
     </div>
     <TexteditorBlogSideForm :content="info" />

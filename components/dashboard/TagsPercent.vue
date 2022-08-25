@@ -82,6 +82,4 @@ p {
   border-radius: 6px;
   text-align: center;
 }
-.tag-names {
-}
 </style>

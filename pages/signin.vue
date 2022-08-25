@@ -39,6 +39,45 @@
           </div>
         </form>
       </div>
+      <!-- <div>
+        <b-button v-b-modal.modal-1>
+          Forgot password?
+        </b-button>
+
+        <b-modal id="modal-1">
+          <input
+            v-model="email"
+            style="border: 1px solid black; padding: 5px; border-radius: 10px"
+            type="text"
+          >
+          <button @click="sendEmail()">
+            Send
+          </button>
+        </b-modal>
+      </div> -->
+      <div>
+        <b-button @click="modalShow = !modalShow">
+          Forgot password?
+        </b-button>
+
+        <b-modal v-model="modalShow" hide-footer>
+          <label class="label" for="password">Email*</label>
+          <CustomInput
+            type="text"
+            placeholder="Enter your email"
+            class="my-2"
+            @inputValue="email = $event"
+          />
+          <button
+            style="width: 30%; color: white"
+            class="signup-page_content_actions_btn"
+            @click="sendEmail()"
+          >
+            Send email
+          </button>
+        </b-modal>
+      </div>
+
       <Notification v-show="error" :message="error" />
       <div
         class="signup-page_content_actions d-flex flex-column align-items-start p-0"
@@ -63,7 +102,8 @@ export default {
     return {
       email: '',
       password: '',
-      error: null
+      error: null,
+      modalShow: false
     }
   },
   mounted () {
@@ -86,6 +126,15 @@ export default {
         this.error = error.response.data.error.message
         // console.log(error)
       }
+    },
+    sendEmail () {
+      const data = {
+        email: this.email
+      }
+      console.log(data)
+      this.$API.users.sendEmailForPasswordReset(data).then((res) => {
+        console.log(res)
+      })
     }
   }
 }

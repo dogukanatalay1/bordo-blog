@@ -9,7 +9,7 @@
         >
       </div>
       <div class="side-form_user-info_infos">
-        <span class="side-form_user-info_infos_name">Alice Ventura</span>
+        <span class="side-form_user-info_infos_name">Örnek İnsan</span>
         <span class="side-form_user-info_infos_role">Writer</span>
       </div>
     </div>

@@ -46,7 +46,8 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/fontawesome',
     '@nuxtjs/auth-next',
-    'v-sanitize/nuxt'
+    'v-sanitize/nuxt',
+    'bootstrap-vue/nuxt'
   ],
   sanitize: {
     /* options */
