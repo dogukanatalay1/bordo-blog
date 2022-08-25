@@ -8,7 +8,7 @@
           { }
         </div>
         <div
-          class="signup-page_content_header_text-and-support d-flex flex-column align-items-start p-0"
+          class="signup-page_content_header_text-and-support d-flex flex-column align-items-center p-0"
         >
           <span class="signup-page_content_header_text-and-support_text">Sign in</span>
           <span class="signup-page_content_header_text-and-support_support">Start your 30-day free trial.</span>

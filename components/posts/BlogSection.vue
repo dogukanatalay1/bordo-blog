@@ -18,8 +18,8 @@ export default {
   methods: {
     getUsersPost () {
       this.$API.posts.getUsersPost().then((response) => {
-        // console.log(response)
-        this.posts = response.data.data
+        console.log(response)
+        this.posts = response.data.data.posts
       })
     }
   }

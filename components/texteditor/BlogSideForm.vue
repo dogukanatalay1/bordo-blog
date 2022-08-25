@@ -22,7 +22,12 @@
       <form action="" @submit.prevent="createPost()">
         <div class="side-form_form_form-group">
           <label for="">Cover image</label>
-          <input type="file" height="48">
+          <input
+            type="file"
+            accept="image/*"
+            height="48"
+            @change="uploadImage"
+          >
         </div>
         <div class="side-form_form_form-group">
           <label for="">Title</label>
@@ -45,6 +50,8 @@
 </template>
 
 <script>
+import { serialize } from 'object-to-formdata'
+
 export default {
   name: 'SideForm',
   props: {
@@ -57,7 +64,8 @@ export default {
     return {
       title: '',
       description: '',
-      tagList: []
+      tagList: [],
+      image: null
     }
   },
   watch: {
@@ -75,16 +83,23 @@ export default {
 
       const tagIdList = this.tagList.map(tag => tag._id)
 
-      const data = {
+      const object = {
         title: this.title,
         description: this.description,
         content: this.content,
         tags: tagIdList,
-        cover_image: ''
+        cover_image: this.image
       }
-      this.$API.posts.createPost(data).then((response) => {
+      console.log(object)
+      const formData = serialize(object)
+      console.log(formData)
+      this.$API.posts.createPost(formData).then((response) => {
         console.log(response)
       })
+    },
+    uploadImage (e) {
+      this.image = e.target.files[0]
+      console.log(this.image)
     }
   }
 }

@@ -7,7 +7,7 @@
       <div class="tag-names d-flex mb-2">
         <div
           v-for="(tag, i) in tags"
-          :key="tag"
+          :key="tag.id"
           class="d-flex flex-row align-items-center"
           style="margin: 0"
         >
@@ -18,7 +18,7 @@
       <div class="chart-div d-flex">
         <DashboardDoughnutChart
           v-for="(tag, i) in tags"
-          :key="tag"
+          :key="tag.id"
           :color="colors[i]"
           :tag="tag"
           class="chart"

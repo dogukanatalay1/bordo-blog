@@ -11,8 +11,12 @@ export default axios => ({
   getSinglePreviewPost: (postId, parameters = {}) => {
     return axios.get(`/posts/get/preview/${postId}`)
   },
-  createPost: (parameters = {}) => {
-    return axios.post('/posts/create', { ...parameters })
+  createPost: (data, parameters = {}) => {
+    return axios.post('/posts/create', data, {
+      headers: {
+        'Content-Type': 'multipart/form-data'
+      }
+    })
   },
   deletePost: (postId, parameters = {}) => {
     return axios.delete(`/posts/delete/my/${postId}`)

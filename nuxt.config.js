@@ -45,8 +45,18 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxtjs/fontawesome',
-    '@nuxtjs/auth-next'
+    '@nuxtjs/auth-next',
+    'v-sanitize/nuxt'
   ],
+  sanitize: {
+    /* options */
+    // defaultOptions: {
+    //   allowedTags: ['a', 'b'],
+    //   allowedAttributes: {
+    //     a: ['href']
+    //   }
+    // }
+  },
 
   /* ICON: <fa icon="iconadi" /> */
   fontawesome: {

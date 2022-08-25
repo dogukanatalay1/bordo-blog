@@ -9,18 +9,18 @@ export default {
   name: 'BlogId',
   data () {
     return {
-      id: this.$route.params,
+      id: this.$route.params.postId,
       post: null
     }
   },
-  created () {
+  mounted () {
     // console.log(this.$route.params)
-    this.getSingleUsersPost(this.$route.params.postId)
+    this.getSingleUsersPost(this.id)
   },
   methods: {
     getSingleUsersPost (Id) {
       this.$API.posts.getSingleUsersPost(Id).then((response) => {
-        // console.log(response.data.data)
+        //  console.log(response.data.data)
         this.post = response.data.data
       })
     }
