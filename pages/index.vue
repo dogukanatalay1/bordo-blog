@@ -14,6 +14,7 @@
 <script>
 export default {
   name: 'IndexPage',
+  middleware: 'guest',
   created () {
     // console.log(this.$auth.loggedIn)
     // console.log(this.$auth.user.data.roles[0].name)

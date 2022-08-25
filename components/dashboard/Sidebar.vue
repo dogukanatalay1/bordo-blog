@@ -1,7 +1,9 @@
 <template>
   <div class="sidebar">
     <div class="sidebar_logo">
-      <span class="sidebar_logo_icon">{ }</span>
+      <nuxt-link style="text-decoration: none" to="/" class="sidebar_logo_icon">
+        { }
+      </nuxt-link>
     </div>
     <hr>
     <div class="sidebar_buttons" />

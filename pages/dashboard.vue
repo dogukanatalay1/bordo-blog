@@ -2,6 +2,7 @@
   <div>
     <DashboardTagsPercent />
     <!-- <DashboardUsers /> -->
+    <DashboardLineChart />
   </div>
 </template>
 
