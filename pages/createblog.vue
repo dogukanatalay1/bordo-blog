@@ -35,7 +35,7 @@
       <div v-if="!isEdit">
         <!-- <div class="blog-view" /> -->
         <!-- <div style="width: 70%" v-html="sanitizeInfo()" /> -->
-        <div @load="sanitizeInfo()" />
+        <div v-html="sanitizeInfo()" />
       </div>
     </div>
     <TexteditorBlogSideForm :content="info" />
@@ -53,7 +53,8 @@ export default {
   },
   methods: {
     sanitizeInfo () {
-      return this.$sanitize(this.info)
+      const sanitizedHTML = this.$sanitize(this.info)
+      return sanitizedHTML
     }
   }
 }

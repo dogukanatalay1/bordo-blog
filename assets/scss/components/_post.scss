@@ -1,78 +1,50 @@
 .post-card {
   gap: 24px;
   max-width: 384px;
-  //max-width: 26%;
-  //height: 60vh;
   height: 468px;
 
-  flex: none;
   flex-grow: 1;
   box-shadow: 1px 1px 3px $flinstone;
   border-radius: 8px;
   overflow: hidden;
-  box-sizing: border-box;
+
   transition: 0.1s;
 
   &_img {
     width: 100%;
     height: 50%;
-    flex: none;
-    align-self: stretch;
-    flex-grow: 0;
+
     background-size: cover;
   }
 
   &_content {
     gap: 32px;
-    flex: none;
-    align-self: stretch;
-    flex-grow: 0;
+
     padding: 12px;
     width: 90%;
     margin: auto;
 
     &_head-subhead {
-      flex: none;
-      align-self: stretch;
-      flex-grow: 0;
       width: 90%;
 
       &_subhead {
-        font-family: 'Inter';
-        font-style: normal;
         font-weight: 600;
+        border: 1px solid red;
         font-size: 14px;
-        line-height: 20px;
+        // line-height: 20px;
         color: $bordo;
-        flex: none;
-        align-self: stretch;
-        flex-grow: 0;
       }
 
       &_head-and-text {
-        gap: 12px;
-        //         width: 384px;
-        //         height: 92px;
-        flex: none;
-        align-self: stretch;
-        flex-grow: 0;
-
         &_head-and-icon {
           gap: 16px;
-          //           width: 384px;
-          //           height: 32px;
-          flex: none;
-          align-self: stretch;
-          flex-grow: 0;
 
           &_heading {
-            font-family: 'Inter';
-            font-style: normal;
             font-weight: 600;
             font-size: 24px;
             line-height: 32px;
             color: $sambucus;
-            flex: none;
+
             flex-grow: 1;
           }
 
@@ -95,17 +67,11 @@
           }
         }
         &_text {
-          font-family: 'Inter';
-          font-style: normal;
           font-weight: 400;
           font-size: 16px;
           line-height: 24px;
           color: $flinstone;
-          flex: none;
-          align-self: stretch;
-          flex-grow: 0;
-          //           width: 384px;
-          //           height: 48px;
+
           margin: 0;
         }
       }
@@ -128,36 +94,32 @@
         padding: 0px;
         width: 100%;
         height: 40px;
-        flex: none;
+
         order: 1;
-        flex-grow: 0;
 
         &_name {
           height: 20px;
-          font-family: 'Inter';
-          font-style: normal;
+
           font-weight: 500;
           font-size: 14px;
           line-height: 20px;
           color: $sambucus;
-          flex: none;
+
           order: 0;
-          flex-grow: 0;
+
           margin: 0;
         }
         &_date {
           height: 20px;
-          font-family: 'Inter';
-          font-style: normal;
+
           font-weight: 400;
           font-size: 14px;
           line-height: 20px;
           width: 100%;
           color: $flinstone;
           margin: 0;
-          flex: none;
+
           order: 1;
-          flex-grow: 0;
         }
       }
     }

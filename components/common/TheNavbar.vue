@@ -1,42 +1,16 @@
 <template>
   <nav class="nav navbar">
     <div
-      class="
-        nav_header
-        d-flex
-        flex-column
-        justify-content-center
-        align-items-center
-        position-absolute
-        p-0
-      "
+      class="nav_header d-flex flex-column justify-content-center align-items-center position-absolute p-0"
     >
       <div
-        class="
-          nav_header_container
-          d-flex
-          flex-row
-          justify-content-between
-          align-items-center
-        "
+        class="nav_header_container d-flex flex-row justify-content-between align-items-center"
       >
         <div
-          class="
-            nav_header_container_content
-            d-flex
-            flex-row
-            align-items-center
-            p-0
-          "
+          class="nav_header_container_content d-flex flex-row align-items-center p-0"
         >
           <div
-            class="
-              nav_header_container_content_logo
-              d-flex
-              flex-row
-              align-items-start
-              p-0
-            "
+            class="nav_header_container_content_logo d-flex flex-row align-items-start p-0"
           >
             <div class="nav_header_container_content_logo_logo-wrap">
               <h5 class="nav_header_container_content_logo_logo-wrap_logotype">
@@ -52,14 +26,7 @@
           </div>
 
           <div
-            class="
-              nav_header_container_content_navigation
-              d-flex
-              justify-content-between
-              flex-row
-              align-items-center
-              p-0
-            "
+            class="nav_header_container_content_navigation d-flex justify-content-between flex-row align-items-center p-0"
           >
             <button class="nav-item">
               Home
@@ -83,14 +50,7 @@
         </div>
 
         <div
-          class="
-            nav_header_container_nav-actions
-            d-flex
-            flex-row
-            align-items-center
-            justify-content-around
-            p-0
-          "
+          class="nav_header_container_nav-actions d-flex flex-row align-items-center justify-content-around p-0"
         >
           <nuxt-link
             v-if="!$auth.loggedIn"
@@ -151,7 +111,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/scss/abstracts/_variables.scss";
+@import '@/assets/scss/abstracts/_variables.scss';
 .profile-icon {
   color: $flinstone;
   font-size: 34px;

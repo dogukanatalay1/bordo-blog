@@ -6,7 +6,13 @@
       </nuxt-link>
     </div>
     <hr>
-    <div class="sidebar_buttons" />
+    <div class="sidebar_buttons">
+      <div>
+        <nuxt-link to="/dashboard/charts">
+          <ion-icon name="pie-chart" />
+        </nuxt-link>
+      </div>
+    </div>
   </div>
 </template>
 

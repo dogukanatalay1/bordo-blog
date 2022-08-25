@@ -13,13 +13,8 @@
 
 <script>
 export default {
-  name: 'IndexPage',
+  name: 'IndexPage'
   // middleware: 'guest',
-  created () {
-    // console.log(this.$auth.loggedIn)
-    // console.log(this.$auth.user.data.roles[0].name)
-    // console.log(this.$auth.user.data.roles[0].name === 'Admin')
-  }
 }
 </script>
 

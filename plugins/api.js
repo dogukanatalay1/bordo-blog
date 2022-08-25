@@ -1,4 +1,4 @@
-import Plans from '../client/plans'
+import Plans from '~/client/plans'
 import Posts from '~/client/posts'
 import Tags from '~/client/tags'
 import Admin from '~/client/admin'
