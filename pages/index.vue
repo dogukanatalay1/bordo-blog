@@ -13,9 +13,10 @@
 
 <script>
 export default {
-  name: 'IndexPage'
-  // middleware: 'guest',
+  name: 'IndexPage',
+  created () {
+    // if (this.$store.state.auth.user.data.roles[0].name === 'SUPERADMIN') {
+    // }
+  }
 }
 </script>
-
-<style></style>

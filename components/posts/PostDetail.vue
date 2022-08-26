@@ -1,25 +1,31 @@
 <template>
   <div class="detail-component">
     <!-- <div v-html="post.content" /> -->
-    <div v-html="sanitizeHTML()" />
-    <!-- <div>
-      {{ sanitizeHTML() }}
-    </div> -->
+    <div contenteditable="true" @paste="sanitize()" />
+    <!-- <span v-sanitize.nothing="post.content" /> -->
+    {{ post.content }}
   </div>
 </template>
 
 <script>
 export default {
   name: 'PostDetail',
-  props: {
-    post: {
-      type: Object,
-      default: null
-    }
+  props: ['post'],
+  created () {
+    console.log('this post: ' + this.post)
   },
   methods: {
-    sanitizeHTML () {
-      return this.$sanitize(this.post.content)
+    sanitize (event) {
+      event.preventDefault()
+      const html = this.$sanitize(event.clipboardData.getData('text/html'))
+      // or
+      // const html = this.$sanitize(
+      //  event.clipboardData.getData('text/html'),
+      //  {
+      //    allowedTags: ['b', 'br']
+      //  }
+      // );
+      document.execCommand('insertHTML', false, html)
     }
   }
 }

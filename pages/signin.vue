@@ -56,7 +56,10 @@
         </b-modal>
       </div> -->
       <div>
-        <b-button @click="modalShow = !modalShow">
+        <b-button
+          style="background: transparent; border: none; color: black !important"
+          @click="modalShow = !modalShow"
+        >
           Forgot password?
         </b-button>
 

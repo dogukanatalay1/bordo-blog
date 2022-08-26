@@ -13,14 +13,14 @@ export default {
       post: null
     }
   },
-  mounted () {
+  created () {
     // console.log(this.$route.params)
     this.getSingleUsersPost(this.id)
   },
   methods: {
     getSingleUsersPost (Id) {
       this.$API.posts.getSingleUsersPost(Id).then((response) => {
-        //  console.log(response.data.data)
+        // console.log(response.data.data)
         this.post = response.data.data
       })
     }

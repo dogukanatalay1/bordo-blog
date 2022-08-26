@@ -67,7 +67,7 @@ export default {
         datasets: [
           {
             backgroundColor: [this.color, '#E2FBD7'],
-            data: [this.tag.percentile, 100 - this.tag.percentile]
+            data: [this.tag.percentile, 100]
           }
         ]
       },

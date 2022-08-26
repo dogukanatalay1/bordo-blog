@@ -6,9 +6,4 @@ export default function ({
   if (store.state.auth.loggedIn) {
     return redirect('/')
   }
-  // else {
-  //   return redirect('signin')
-  // }
 }
-
-// code is not running correct
