@@ -10,7 +10,7 @@ export default {
   data () {
     return {
       id: this.$route.params.postId,
-      post: null
+      post: {}
     }
   },
   created () {

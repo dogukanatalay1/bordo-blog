@@ -26,8 +26,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-.users {
-  background-color: lightgray;
-}
-</style>
+<style lang="scss" scoped></style>

@@ -10,7 +10,13 @@
 <script>
 export default {
   name: 'PostDetail',
-  props: ['post'],
+  props: {
+    post: {
+      type: Object,
+      default: null
+    }
+  },
+
   created () {
     console.log('this post: ' + this.post)
   },

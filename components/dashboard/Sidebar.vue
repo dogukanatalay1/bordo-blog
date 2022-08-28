@@ -8,7 +8,7 @@
     <hr>
     <div class="sidebar_buttons">
       <div>
-        <nuxt-link to="/dashboard/charts">
+        <nuxt-link style="color: black; font-size: 24px" to="/dashboard/charts">
           <ion-icon name="pie-chart" />
         </nuxt-link>
       </div>

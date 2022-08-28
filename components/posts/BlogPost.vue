@@ -76,6 +76,13 @@
             {{ format_date(post.createdAt) }}
           </p>
         </div>
+        <button
+          style="color: red; font-size: 24px"
+          type="button"
+          @click="deletePost()"
+        >
+          <ion-icon name="trash-bin-outline" />
+        </button>
       </div>
     </div>
   </div>
@@ -100,6 +107,12 @@ export default {
       if (value) {
         return moment(value).format('DD.MM.YYYY')
       }
+    },
+    deletePost () {
+      this.$API.posts.deletePost(this.post._id).then((response) => {
+        console.log(response)
+        this.$forceUpdate()
+      })
     }
   }
 }

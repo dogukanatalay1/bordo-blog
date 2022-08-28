@@ -6,10 +6,10 @@
       </div>
       <div class="user-info_user-container_username-role d-flex flex-column">
         <span class="user-info_user-container_username-role_name">
-          {{ user.first_name }}{{ user.last_name }}
+          {{ userData.first_name }}{{ userData.last_name }}
         </span>
         <span class="user-info_user-container_username-role_role">
-          {{ user.roles[0].name }}
+          {{ userData.roles[0].name }}
         </span>
       </div>
     </div>
@@ -29,7 +29,7 @@
       class="user-info_email-container d-flex flex-column justify-content-center align-items-center"
     >
       <span class="user-info_email-container_email-name">
-        {{ user.email }}
+        {{ userData.email }}
       </span>
       <span class="user-info_email-container_email"> email </span>
     </div>
@@ -48,9 +48,16 @@ export default {
   props: {
     user: {
       type: Object,
-      required: true,
       default: null
     }
+  },
+  data () {
+    return {
+      userData: this.user.user
+    }
+  },
+  created () {
+    console.log(this.user)
   }
 }
 </script>

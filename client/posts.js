@@ -11,6 +11,12 @@ export default axios => ({
   getSinglePreviewPost: (postId, parameters = {}) => {
     return axios.get(`/posts/get/preview/${postId}`)
   },
+  /*
+  Multipart requests combine one or more sets
+  of data into a single body, separated by boundaries.
+  You typically use these requests for file uploads and
+  for transferring data of several types in a single request
+  */
   createPost: (data, parameters = {}) => {
     return axios.post('/posts/create', data, {
       headers: {

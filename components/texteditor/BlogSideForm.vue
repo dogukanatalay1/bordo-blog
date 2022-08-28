@@ -30,18 +30,22 @@
           >
         </div>
         <div class="side-form_form_form-group">
-          <label for="">Title</label>
-          <input v-model="title" placeholder="Enter title" type="text">
+          <label class="label" for="title">Title</label>
+          <CustomInput
+            type="text"
+            placeholder="Enter title"
+            @inputValue="title = $event"
+          />
         </div>
         <div class="side-form_form_form-group">
-          <label for="">Descrtiption</label>
-          <input
-            v-model="description"
-            placeholder="Enter description"
+          <label class="label" for="password">Description</label>
+          <CustomInput
             type="text"
-          >
+            placeholder="Enter description"
+            @inputValue="description = $event"
+          />
         </div>
-        <button class="btn btn-danger" type="submit">
+        <button class="btn mt-2" type="submit">
           Save
         </button>
       </form>
@@ -90,9 +94,13 @@ export default {
         tags: tagIdList,
         cover_image: this.image
       }
-      console.log(object)
+
       const formData = serialize(object)
-      console.log(formData)
+      /*
+      Serializing: The process whereby an object or data
+      structure is translated into a format
+      suitable for transfer over a network, or storage
+      */
       this.$API.posts.createPost(formData).then((response) => {
         console.log(response)
       })
@@ -104,3 +112,11 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+@import '@/assets/scss/abstracts/_variables.scss';
+.btn {
+  background-color: $bordo;
+  color: white;
+}
+</style>
