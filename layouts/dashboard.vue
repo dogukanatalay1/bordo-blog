@@ -13,4 +13,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/assets/scss/abstracts/_variables.scss';
+.dashboard {
+  background-color: #f8f8f8;
+}
 </style>

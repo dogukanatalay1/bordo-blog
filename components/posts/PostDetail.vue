@@ -1,9 +1,8 @@
 <template>
   <div class="detail-component">
     <!-- <div v-html="post.content" /> -->
-    <div contenteditable="true" @paste="sanitize()" />
-    <!-- <span v-sanitize.nothing="post.content" /> -->
-    {{ post.content }}
+    <!-- <div contenteditable="true" @paste="sanitize()" /> -->
+    <span v-sanitize.nothing="post.content" />
   </div>
 </template>
 
@@ -15,10 +14,6 @@ export default {
       type: Object,
       default: null
     }
-  },
-
-  created () {
-    console.log('this post: ' + this.post)
   },
   methods: {
     sanitize (event) {
@@ -36,3 +31,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.detail-component {
+  width: 80%;
+}
+</style>
