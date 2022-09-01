@@ -1,13 +1,17 @@
 <template>
   <div class="dashboard d-flex">
     <DashboardSidebar />
-    <Nuxt />
+    <div style="width: 100%" class="d-flex flex-column">
+      <DashboardNav /> <Nuxt />
+    </div>
   </div>
 </template>
 
 <script>
+import DashboardNav from '../components/dashboard/DashboardNav.vue'
 export default {
   name: 'DashboardLayout',
+  components: { DashboardNav },
   head () {
     return {
       script: [
