@@ -21,6 +21,10 @@ export default {
     '@/assets/scss/abstracts/_variables.scss'
   ],
 
+  storybook: {
+    // Options
+  },
+
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     { src: '~/plugins/api.js' },
@@ -121,33 +125,6 @@ export default {
       }
     }
   },
-
-  // auth: {
-  //   strategies: {
-  //     local: {
-  //       token: {
-  //         property: 'token',
-  //         global: true,
-  //         // required: true,
-  //         // type: 'Bearer',
-  //         propertyName: 'auth._token.local'
-  //       },
-  //       user: {
-  //         property: 'user',
-  //         autoFetch: true
-  //       },
-  //       endpoints: {
-  //         login: {
-  //           url: 'user/login',
-  //           method: 'post',
-  //           propertyName: 'access_token'
-  //         },
-  //         logout: { url: 'user/logout', method: 'post' },
-  //         user: { url: 'user/profile', method: 'get' }
-  //       }
-  //     }
-  //   }
-  // },
 
   env: {
     baseUrl: process.env.BROWSER_BASE_URL
