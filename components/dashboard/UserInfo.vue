@@ -15,36 +15,19 @@
         </div>
       </div>
       <div
-        class="
-          user-info_posts-container
-          d-flex
-          flex-column
-          align-items-center
-          justify-content-center
-        "
+        class="user-info_posts-container d-flex flex-column align-items-center justify-content-center"
       >
         <span class="user-info_posts-container_post-count">34</span>
         <span class="user-info_posts-container_post">Published Posts</span>
       </div>
       <div
-        class="
-          user-info_likes-container
-          d-flex
-          flex-column
-          justify-content-center
-        "
+        class="user-info_likes-container d-flex flex-column justify-content-center"
       >
         <span class="user-info_likes-container_likes-count">200</span>
         <span class="user-info_likes-container_likes">Likes</span>
       </div>
       <div
-        class="
-          user-info_email-container
-          d-flex
-          flex-column
-          justify-content-center
-          align-items-center
-        "
+        class="user-info_email-container d-flex flex-column justify-content-center align-items-center"
       >
         <span class="user-info_email-container_email-name">
           {{ userData.email }}
@@ -52,21 +35,13 @@
         <span class="user-info_email-container_email"> email </span>
       </div>
       <div class="user-info_icon-container d-flex align-items-center">
-        <button @click="toggleStyle()">
+        <button>
           <ion-icon
             class="user-info_icon-container_icon"
             name="chevron-forward-outline"
           />
         </button>
       </div>
-    </div>
-    <div class="user-info_panel">
-      <button class="btn btn-danger">
-        Promote to admin
-      </button>
-      <button class="btn btn-danger">
-        Step down admin
-      </button>
     </div>
   </div>
 </template>
@@ -90,15 +65,14 @@ export default {
     console.log(this.user)
   },
   methods: {
-    toggleStyle () {
-      const el = document.querySelector('.user-info_panel')
-
-      if (getComputedStyle(el).display === 'block') {
-        el.style.display = 'none'
-      } else {
-        el.style.display = 'block'
-      }
-    }
+    // toggleStyle () {
+    //   const el = document.querySelector('.user-info_panel')
+    //   if (getComputedStyle(el).display === 'block') {
+    //     el.style.display = 'none'
+    //   } else {
+    //     el.style.display = 'block'
+    //   }
+    // }
   }
 }
 </script>

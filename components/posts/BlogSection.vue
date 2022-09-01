@@ -59,21 +59,21 @@ export default {
   height: 100vh;
   width: 100%;
   flex-wrap: wrap;
-  .pagination-rows {
-    .page-item {
-      span,
-      button {
-        background-color: $bordo !important;
-        color: $bordo !important;
-        outline: none !important;
+}
+.pagination-rows {
+  .page-item {
+    span,
+    button {
+      background-color: $bordo !important;
+      color: $bordo !important;
+      outline: none !important;
 
-        &:hover,
-        &:focus,
-        &:visited,
-        &:link {
-          background-color: $bordo !important;
-          outline: none !important;
-        }
+      &:hover,
+      &:focus,
+      &:visited,
+      &:link {
+        background-color: $bordo !important;
+        outline: none !important;
       }
     }
   }
