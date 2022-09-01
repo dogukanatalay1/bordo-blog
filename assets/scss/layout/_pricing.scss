@@ -1,0 +1,296 @@
+.pricing-section {
+  padding: 96px 0px;
+  gap: 64px;
+  background: #ffffff;
+  order: 6;
+  font-family: 'Inter';
+  font-style: normal;
+  width: 100%;
+
+  &_heading {
+    padding: 0px 32px;
+    gap: 32px;
+    width: 90%;
+
+    &_content {
+      gap: 48px;
+      width: 95%;
+
+      &_head-support-container {
+        font-weight: 600;
+        gap: 20px;
+
+        &_head {
+          .sub-head {
+            font-size: 16px;
+            line-height: 24px;
+            color: $bordo;
+          }
+          .main-head {
+            font-size: 36px;
+            line-height: 44px;
+            letter-spacing: -0.02em;
+            color: $sambucus;
+          }
+        }
+        &_support {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 28px;
+          color: $flinstone;
+        }
+      }
+    }
+  }
+
+  &_content {
+    padding: 0px 32px;
+    gap: 96px;
+    justify-content: center;
+
+    &_left-container {
+      gap: 48px;
+      width: 45%;
+
+      &_feature-text {
+        gap: 16px;
+
+        &_featured-icon {
+          width: 48px;
+          height: 48px;
+          background: $placebo-fuchsia;
+          border: 8px solid $dr-white;
+          border-radius: 28px;
+
+          &_icon-circle {
+            position: relative;
+            margin-top: 4px;
+            text-align: center;
+
+            &_icon {
+              color: $bordo;
+              font-size: 18px;
+            }
+          }
+        }
+        &_content {
+          gap: 20px;
+
+          flex-grow: 1;
+
+          &_text-support {
+            padding: 10px 0px 0px;
+            gap: 8px;
+
+            &_text {
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 30px;
+              color: $sambucus;
+            }
+            &_support {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 24px;
+              color: $flinstone;
+            }
+          }
+        }
+      }
+    }
+    &_pricing-card {
+      background: #ffffff;
+      border: 1px solid $bright-grey;
+      box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08),
+        0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+      border-radius: 16px;
+
+      &_header {
+        padding: 32px 24px;
+        gap: 32px;
+
+        border-bottom: 1px solid $bright-grey;
+
+        &_heading-price {
+          gap: 32px;
+
+          &_heading {
+            padding: 4px 0px 0px;
+            gap: 4px;
+
+            flex-grow: 1;
+
+            &_h-badge {
+              gap: 8px;
+
+              .head {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 32px;
+                color: $sambucus;
+              }
+
+              .badge {
+                mix-blend-mode: multiply;
+
+                &_base {
+                  padding: 2px 10px;
+
+                  background: $dr-white;
+                  border-radius: 16px;
+
+                  &_text {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                    text-align: center;
+                    color: $bordo;
+                  }
+                }
+              }
+            }
+            &_text {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 24px;
+              color: $flinstone;
+            }
+          }
+          &_price {
+            gap: 2px;
+
+            &_dollar-wrap {
+              padding: 0px 0px 20px;
+              gap: 10px;
+
+              .text {
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 44px;
+                letter-spacing: -0.02em;
+                color: $sambucus;
+              }
+            }
+            &_price-amount {
+              font-weight: 600;
+              font-size: 60px;
+              line-height: 72px;
+              letter-spacing: -0.02em;
+              color: $sambucus;
+            }
+            &_period-wrap {
+              padding: 0px 0px 8px;
+
+              order: 2;
+
+              .text {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: $flinstone;
+              }
+            }
+          }
+        }
+      }
+      &_content {
+        padding: 32px 32px 40px;
+        gap: 24px;
+
+        border-bottom: 1px solid $bright-grey;
+
+        &_text-support {
+          gap: 4px;
+
+          &_text {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: $sambucus;
+          }
+          &_support {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: $flinstone;
+          }
+        }
+        &_check-items-wrap {
+          gap: 32px;
+
+          &_check-items {
+            gap: 16px;
+
+            flex-grow: 1;
+
+            &_check-item {
+              gap: 12px;
+
+              &_check-icon {
+                width: 24px;
+                height: 24px;
+                background: #d1fadf;
+                border-radius: 12px;
+
+                .icon {
+                  position: relative;
+                  color: #12b76a;
+                  font-size: 22px;
+                }
+              }
+              &_text-wrap {
+                flex-grow: 1;
+
+                &_text {
+                  font-weight: 400;
+                  font-size: 16px;
+                  line-height: 24px;
+                  color: $flinstone;
+                }
+              }
+            }
+          }
+        }
+      }
+      &_footer {
+        padding: 32px;
+        gap: 24px;
+
+        background: #ffffff;
+
+        order: 2;
+
+        &_actions {
+          gap: 12px;
+
+          &_btn {
+            padding: 10px 20px;
+            gap: 8px;
+            text-align: center;
+            background: $bordo;
+            border: 1px solid $bordo;
+            box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+            border-radius: 8px;
+
+            &_text {
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 24px;
+              color: #ffffff;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .pricing-section_content {
+    flex-direction: column !important;
+  }
+  .pricing-section_content_left-container {
+    width: 90%;
+  }
+}

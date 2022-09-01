@@ -1,0 +1,98 @@
+.user-info {
+  font-family: 'DM Sans';
+  font-style: normal;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 110px;
+  border-radius: 15px;
+  max-width: 1324px;
+  padding: 15px;
+  background-color: #fff;
+
+  &_panel {
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  &_user-container {
+    &_img-container {
+      img {
+        width: 70px;
+        background-size: auto;
+        border-radius: 50%;
+      }
+    }
+
+    &_username-role {
+      padding: 10px;
+
+      &_name {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 29px;
+        color: $sambucus;
+      }
+      &_role {
+        color: $flinstone;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  &_posts-container {
+    &_post-count {
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 29px;
+      color: #000000;
+    }
+    &_post {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: $flinstone;
+    }
+  }
+
+  &_likes-container {
+    &_likes-count {
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 29px;
+      color: $sambucus;
+    }
+    &_count {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: $flinstone;
+    }
+  }
+
+  &_email-container {
+    &_email-name {
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 29px;
+      color: $sambucus;
+    }
+    &_email {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: $flinstone;
+    }
+  }
+
+  &_icon-container {
+    width: 25px;
+    &_icon {
+      color: $flinstone;
+    }
+  }
+}

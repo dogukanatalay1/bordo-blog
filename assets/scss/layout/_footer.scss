@@ -1,0 +1,217 @@
+.footer {
+  width: 100%;
+  background: #ffffff;
+  order: 9;
+
+  &_join-section {
+    padding: 48px 0px;
+    gap: 64px;
+    width: 100%;
+    background: $dr-white;
+
+    &_container {
+      padding: 0px 32px;
+      gap: 64px;
+      width: 90%;
+
+      &_content {
+        width: 100%;
+        justify-content: space-between;
+
+        &_text-and-support {
+          gap: 8px;
+          flex-grow: 1;
+
+          &_text {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: $sambucus;
+          }
+
+          &_support {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: $flinstone;
+          }
+        }
+        &_email-capture {
+          gap: 16px;
+
+          &_input-field {
+            gap: 6px;
+            flex-grow: 1;
+
+            &_input-container {
+              gap: 6px;
+
+              &_input {
+                padding: 10px 14px;
+                gap: 8px;
+
+                background: #ffffff;
+                border: 1px solid $satin-white;
+                box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+                border-radius: 8px;
+              }
+            }
+          }
+
+          &_btn {
+            padding: 10px 18px;
+            background: $bordo;
+            border: 1px solid $bordo;
+            box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+            border-radius: 8px;
+
+            &_btn-text {
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 24px;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &_links-section {
+    padding: 64px 0px 48px;
+    width: 100%;
+
+    &_link-container {
+      padding: 0px 32px;
+      gap: 48px;
+      width: 100%;
+
+      &_content {
+        width: 100%;
+
+        justify-content: space-around !important;
+
+        &_logo-and-supporting {
+          gap: 32px;
+
+          &_logo {
+            &_logo-text {
+              color: $sambucus;
+              font-weight: 700;
+              font-size: 22px;
+            }
+          }
+          &_supporting {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: $flinstone;
+            max-width: 400px;
+          }
+        }
+        &_links {
+          gap: 32px;
+
+          &_link-column {
+            gap: 16px;
+
+            &_heading {
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 20px;
+              color: $vesper-violet;
+            }
+            &_footer-links {
+              gap: 12px;
+
+              &_footer-link {
+                gap: 8px;
+
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: $flinstone;
+
+                .badge {
+                  padding: 10px 5px;
+                  mix-blend-mode: multiply;
+
+                  &_base {
+                    padding: 2px 8px;
+                    width: 42px;
+                    height: 22px;
+                    background: #ecfdf3;
+                    border-radius: 16px;
+
+                    &_text {
+                      width: 26px;
+                      height: 18px;
+
+                      font-weight: 500;
+                      font-size: 12px;
+                      line-height: 18px;
+                      text-align: center;
+                      color: #027a48;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &_social-container {
+      padding: 0px 32px;
+      gap: 32px;
+      width: 85%;
+      &_content {
+        padding: 32px 0px 0px;
+        gap: 32px;
+        box-sizing: border-box;
+        width: 100%;
+        justify-content: space-between !important;
+
+        border-top: 1px solid $bright-grey;
+
+        &_footer-text {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: $vesper-violet;
+        }
+
+        &_social-icons {
+          gap: 24px;
+
+          &_social-icon {
+            width: 24px;
+            height: 24px;
+
+            text-align: center;
+
+            &_icon {
+              color: #98a2b3;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer_join-section_container_content {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .footer_join-section_container_content_email-capture {
+    flex-direction: column !important;
+  }
+
+  .footer_links-section_social-container_content {
+    flex-direction: column !important;
+  }
+}

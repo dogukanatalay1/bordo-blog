@@ -1,0 +1,30 @@
+.sidebar {
+  display: flex;
+  width: 96px;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  border-radius: 0px 20px 20px 0px;
+  position: sticky;
+  background-color: #fff;
+  box-shadow: 1px 1px 1px lightgray;
+
+  &_logo {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_icon {
+      color: $bordo;
+      margin-top: 3px;
+      font-weight: 500;
+      font-size: 24px;
+    }
+  }
+
+  hr {
+    width: 80%;
+  }
+}

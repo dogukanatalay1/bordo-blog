@@ -1,0 +1,12 @@
+.d-f {
+  display: flex;
+  
+  &.r {
+    flex-direction: row;
+  }
+
+  &.c {
+    flex-direction: column;
+  }
+}
+

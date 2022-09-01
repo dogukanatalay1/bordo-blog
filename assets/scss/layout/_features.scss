@@ -1,0 +1,134 @@
+.features {
+  padding: 0px 0px 96px;
+  gap: 64px;
+  width: 85%;
+  background: #ffffff;
+  order: 2;
+
+  &_header-container {
+    padding: 0px 32px;
+    gap: 32px;
+    width: 100%;
+
+    &_content {
+      gap: 48px;
+
+      &_heading {
+        gap: 20px;
+
+        &_head {
+          gap: 12px;
+          font-weight: 600;
+
+          &_sub-heading {
+            font-size: 16px;
+            line-height: 24px;
+            color: $bordo;
+          }
+          &_main-heading {
+            font-size: 36px;
+            line-height: 44px;
+            letter-spacing: -0.02em;
+            color: #101828;
+          }
+        }
+        &_support-text {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 30px;
+          color: $flinstone;
+        }
+      }
+    }
+  }
+
+  &_content-container {
+    padding: 0px 32px;
+    gap: 64px;
+    width: 90%;
+
+    box-sizing: content-box;
+
+    &_content-left {
+      flex-grow: 1;
+
+      &_feature-tab {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px 0px 16px 24px;
+        gap: 20px;
+        border-left: 4px solid $chefs-hat;
+        min-width: 300px;
+
+        &_text {
+          gap: 8px;
+
+          .text {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: $sambucus;
+          }
+
+          .supporting-text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: $flinstone;
+          }
+        }
+
+        &_btn {
+          gap: 8px;
+          width: 115px;
+          height: 24px;
+
+          .text {
+            width: 87px;
+            height: 24px;
+
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 24px;
+            color: $bordo;
+          }
+
+          .icon-box {
+            width: 20px;
+            height: 20px;
+
+            .icon {
+              position: relative;
+              color: $bordo;
+              margin-top: 3px;
+            }
+          }
+        }
+
+        &:nth-child(1) {
+          border-left: 4px solid $bordo;
+        }
+      }
+    }
+    &_content-right {
+      background-color: $lavender-savor;
+      flex-grow: 1;
+      // height: 100%;
+      height: 500px;
+      width: 90%;
+
+      &_cards-wrap {
+        // position: absolute;
+        // width: 576px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .features_content-container {
+    flex-direction: column !important;
+  }
+}

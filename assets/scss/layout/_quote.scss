@@ -1,0 +1,108 @@
+.quote {
+  padding: 0px 0px 96px;
+  gap: 64px;
+  width: 100%;
+  background: #ffffff;
+
+  position: static;
+
+  &_container {
+    padding: 0px 32px;
+    width: 85%;
+
+    &_content {
+      background: $midnight-express;
+      border-radius: 24px;
+      flex-grow: 1;
+      overflow: hidden;
+
+      &_text-content {
+        padding: 64px;
+        gap: 40px;
+        width: 60%;
+
+        &_quote-and-attr {
+          gap: 32px;
+
+          &_pagination {
+            gap: 16px;
+
+            &_dot {
+              background: $flinstone;
+              border-radius: 6px;
+
+              &:nth-child(1) {
+                background: white;
+              }
+            }
+          }
+
+          &_text-and-support {
+            gap: 4px;
+
+            &_text {
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 28px;
+              color: #ffffff;
+            }
+            &_support {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 24px;
+              color: $bright-grey;
+            }
+          }
+
+          &_quote-and-stars {
+            gap: 24px;
+
+            &_stars {
+              gap: 4px;
+
+              &_star-icon {
+                width: 20px;
+                height: 20px;
+
+                text-align: center;
+                margin-bottom: 2px;
+
+                &_icon {
+                  position: relative;
+                  color: #fec84b;
+                  border-radius: 0.5px;
+                  margin-bottom: 2px;
+                }
+              }
+            }
+            &_quote {
+              // width: 608px;
+              //  height: 132px;
+
+              font-weight: 500;
+              font-size: 36px;
+              line-height: 44px;
+              letter-spacing: -0.02em;
+              margin: 0;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+
+      &_image-container {
+        width: 40%;
+        height: 465px;
+        border: 1px solid white;
+
+        &_img {
+          background: url('~/static/images/quote.png');
+          position: relative;
+          height: 100%;
+          width: 100%;
+          background-size: cover;
+        }
+      }
+    }
+  }
+}

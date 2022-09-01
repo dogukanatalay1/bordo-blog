@@ -1,0 +1,31 @@
+@import '@/assets/scss/layout/_hero.scss';
+@import '@/assets/scss/layout/_footer.scss';
+@import '@/assets/scss/layout/_navbar.scss';
+@import '@/assets/scss/layout/_ctaSection.scss';
+@import '@/assets/scss/layout/_ctaSecond.scss';
+@import '@/assets/scss/layout/_features.scss';
+@import '@/assets/scss/layout/_quote.scss';
+@import '@/assets/scss/layout/_pricing.scss';
+@import '@/assets/scss/layout/_sponsors.scss';
+@import '@/assets/scss/pages/_home.scss';
+@import '@/assets/scss/pages/_signup.scss';
+@import '@/assets/scss/components/_post.scss';
+@import '@/assets/scss/components/_blogsection.scss';
+@import '@/assets/scss/components/_profilecard.scss';
+@import '@/assets/scss/components/_postform.scss';
+@import '@/assets/scss/components/userinfo.scss';
+@import '@/assets/scss/components/sidebar.scss';
+@import '@/assets/scss/components/_blogsideform.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  // flex-grow: 0;
+  // align-self: stretch;
+  font-family: 'Inter';
+  font-style: normal;
+}
+
+// Use @USE instead of import ****

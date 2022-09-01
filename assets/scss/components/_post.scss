@@ -1,0 +1,129 @@
+// TEXT OVERFLOW ELLIPSIS WILL BE ADDED
+
+.post-card {
+  gap: 24px;
+  max-width: 384px;
+  height: 468px;
+
+  flex-grow: 1;
+  box-shadow: 1px 1px 3px $flinstone;
+  border-radius: 8px;
+  overflow: hidden;
+
+  transition: 0.1s;
+
+  &_img {
+    width: 100%;
+    height: 50%;
+
+    background-size: cover;
+  }
+
+  &_content {
+    gap: 32px;
+
+    padding: 12px;
+    width: 90%;
+    margin: auto;
+
+    &_head-subhead {
+      width: 90%;
+
+      &_subhead {
+        font-weight: 600;
+
+        font-size: 14px;
+        // line-height: 20px;
+        color: $bordo;
+      }
+
+      &_head-and-text {
+        &_head-and-icon {
+          gap: 16px;
+
+          &_heading {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            color: $sambucus;
+
+            flex-grow: 1;
+          }
+
+          &_icon-wrap {
+            padding: 4px 0px 0px;
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+
+            &_icon {
+              transform: rotate(-45deg);
+              color: $sambucus;
+              font-size: 24px;
+              transition: ease-in-out 0.3s;
+
+              &:hover {
+                transform: rotate(0deg);
+              }
+            }
+          }
+        }
+        &_text {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: $flinstone;
+
+          margin: 0;
+        }
+      }
+    }
+    &_avatar-container {
+      gap: 12px;
+      width: 50%;
+      height: 40px;
+
+      &_avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+
+      &_name-and-date {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        width: 100%;
+        height: 40px;
+
+        order: 1;
+
+        &_name {
+          height: 20px;
+
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+          color: $sambucus;
+
+          order: 0;
+
+          margin: 0;
+        }
+        &_date {
+          height: 20px;
+
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          width: 100%;
+          color: $flinstone;
+          margin: 0;
+
+          order: 1;
+        }
+      }
+    }
+  }
+}

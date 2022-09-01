@@ -1,0 +1,89 @@
+.nav {
+  width: 100%;
+  border-bottom: 1px solid $chefs-hat;
+  padding: 40px 0;
+  background: $base-white;
+
+  &_header {
+    height: 80px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+
+    &_container {
+      padding: 0px 32px;
+
+      width: 90%;
+      height: 44px;
+
+      margin: 18px 80px;
+
+      &_content {
+        gap: 40px;
+
+        width: 45%;
+        height: 32px;
+
+        &_logo {
+          padding: 0px;
+
+          width: 25%;
+          height: 32px;
+
+          &_logo-wrap {
+            &_logotype {
+              a {
+                color: $sambucus;
+                width: 130px;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+
+        &_navigation {
+          gap: 32px;
+
+          width: 69%;
+          height: 32px;
+
+          left: 182px; // not sure
+
+          .nav-item {
+            color: $flinstone;
+          }
+        }
+      }
+
+      &_nav-actions {
+        gap: 12px;
+
+        width: 15%;
+        height: 44px;
+
+        .nav-btn {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 10px 18px;
+          gap: 8px;
+          border-radius: 8px;
+          height: 44px;
+
+          &:active {
+            border: none;
+          }
+
+          &-login {
+            color: $flinstone;
+          }
+          &-signup {
+            background: $bordo;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

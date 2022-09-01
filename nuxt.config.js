@@ -15,10 +15,18 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: [
+    '@/assets/css/bootstrap.min.css',
+    '@/assets/scss/main.scss',
+    '@/assets/scss/abstracts/_variables.scss'
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [
+    { src: '~/plugins/api.js' },
+    { src: '~/plugins/axios.js' },
+    { src: '~/plugins/TiptapVuetify' }
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -28,15 +36,28 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/vuetify'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    '@nuxtjs/fontawesome'
+    '@nuxtjs/fontawesome',
+    '@nuxtjs/auth-next',
+    'v-sanitize/nuxt',
+    'bootstrap-vue/nuxt'
   ],
+  sanitize: {
+    /* options */
+    // defaultOptions: {
+    //   allowedTags: ['a', 'b'],
+    //   allowedAttributes: {
+    //     a: ['href']
+    //   }
+    // }
+  },
 
   /* ICON: <fa icon="iconadi" /> */
   fontawesome: {
@@ -46,12 +67,96 @@ export default {
       brands: true
     }
   },
+  // -
+  // Runtime config allows passing dynamic config and environment variables to the nuxt context.
+  publicRuntimeConfig: {
+    // server and client both using
+    axios: {
+      browserBaseURL: process.env.BROWSER_BASE_URL
+    }
+  },
+
+  privateRuntimeConfig: {
+    // server only, overrides publidRuntimeConfig
+    axios: {
+      baseURL: process.env.BASE_URL
+    }
+  },
+
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/'
+    //  baseURL: process.env.BROWSER_BASE_URL
+    baseURL: 'https://bordo-blog.herokuapp.com/api/v1'
+  },
+
+  server: {
+    port: 4000
+  },
+
+  auth: {
+    strategies: {
+      local: {
+        token: {
+          property: 'data.access_token',
+          global: true,
+          required: true,
+          type: 'bearer'
+        },
+        user: {
+          property: ''
+        },
+        endpoints: {
+          login: {
+            url: '/users/login',
+            method: 'post'
+          },
+          tokenRequired: true,
+          logout: { url: 'users/logout', method: 'delete' },
+          user: {
+            url: '/users/profile',
+            method: 'get'
+          }
+        }
+      }
+    }
+  },
+
+  // auth: {
+  //   strategies: {
+  //     local: {
+  //       token: {
+  //         property: 'token',
+  //         global: true,
+  //         // required: true,
+  //         // type: 'Bearer',
+  //         propertyName: 'auth._token.local'
+  //       },
+  //       user: {
+  //         property: 'user',
+  //         autoFetch: true
+  //       },
+  //       endpoints: {
+  //         login: {
+  //           url: 'user/login',
+  //           method: 'post',
+  //           propertyName: 'access_token'
+  //         },
+  //         logout: { url: 'user/logout', method: 'post' },
+  //         user: { url: 'user/profile', method: 'get' }
+  //       }
+  //     }
+  //   }
+  // },
+
+  env: {
+    baseUrl: process.env.BROWSER_BASE_URL
+    // BASE_URL: 'https://bordo-blog.herokuapp.com/api/v1/',
+    // BROWSER_BASE_URL: 'https://bordo-blog.herokuapp.com/api/v1/'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {
+    transpile: ['vuetify/lib', 'tiptap-vuetify']
+  }
 }
