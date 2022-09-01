@@ -76,11 +76,7 @@
             {{ format_date(post.createdAt) }}
           </p>
         </div>
-        <button
-          style="color: red; font-size: 24px"
-          type="button"
-          @click="deletePost()"
-        >
+        <button style="font-size: 24px" type="button" @click="deletePost()">
           <ion-icon name="trash-bin-outline" />
         </button>
       </div>
@@ -99,9 +95,6 @@ export default {
       required: true
     }
   },
-  created () {
-    console.log('post :' + this.post)
-  },
   methods: {
     format_date (value) {
       if (value) {
@@ -117,5 +110,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped></style>

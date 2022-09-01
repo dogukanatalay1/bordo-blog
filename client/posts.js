@@ -11,12 +11,10 @@ export default axios => ({
   getSinglePreviewPost: (postId, parameters = {}) => {
     return axios.get(`/posts/get/preview/${postId}`)
   },
-  /*
-  Multipart requests combine one or more sets
+  /* Multipart requests combine one or more sets
   of data into a single body, separated by boundaries.
   You typically use these requests for file uploads and
-  for transferring data of several types in a single request
-  */
+  for transferring data of several types in a single request */
   createPost: (data, parameters = {}) => {
     return axios.post('/posts/create', data, {
       headers: {
@@ -26,5 +24,8 @@ export default axios => ({
   },
   deletePost: (postId, parameters = {}) => {
     return axios.delete(`/posts/delete/my/${postId}`)
+  },
+  getLimitedPosts: (limit, page, parameters = {}) => {
+    return axios.get(`/posts/get-all/my/limit?limit=${limit}&page=${page}`)
   }
 })

@@ -10,6 +10,13 @@
   padding: 15px;
   background-color: #fff;
 
+  &_panel {
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+  }
+
   &_user-container {
     &_img-container {
       img {
