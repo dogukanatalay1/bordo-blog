@@ -74,13 +74,16 @@
   "TagsTagList": {
     "description": "Auto imported from components/tags/TagList.vue"
   },
-  "UserProfile": {
-    "description": "Auto imported from components/user/Profile.vue"
-  },
   "TexteditorBlogSideForm": {
     "description": "Auto imported from components/texteditor/BlogSideForm.vue"
   },
   "TexteditorEditor": {
     "description": "Auto imported from components/texteditor/Editor.vue"
+  },
+  "UserProfile": {
+    "description": "Auto imported from components/user/Profile.vue"
+  },
+  "DashboardSliderCardSlider": {
+    "description": "Auto imported from components/dashboard/slider/CardSlider.vue"
   }
 }

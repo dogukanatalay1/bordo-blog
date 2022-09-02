@@ -1,5 +1,8 @@
 <template>
   <div class="admin">
+    <div style="padding: 0px 40px; width: 100%">
+      <DashboardSliderCardSlider />
+    </div>
     <DashboardUsers />
   </div>
 </template>

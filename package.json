@@ -24,6 +24,7 @@
     "moment": "^2.29.4",
     "nuxt": "^2.15.8",
     "object-to-formdata": "^4.4.2",
+    "swiper": "^6.8.4",
     "tiptap-vuetify": "^2.24.0",
     "v-sanitize": "^0.0.9",
     "vue": "^2.7.10",

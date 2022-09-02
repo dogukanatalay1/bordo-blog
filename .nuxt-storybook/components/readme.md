@@ -31,6 +31,7 @@ You can directly use them in pages and other components without the need to impo
 - `<PostsPostDetail>` | `<posts-post-detail>` (components/posts/PostDetail.vue)
 - `<PostsPostForm>` | `<posts-post-form>` (components/posts/PostForm.vue)
 - `<TagsTagList>` | `<tags-tag-list>` (components/tags/TagList.vue)
-- `<UserProfile>` | `<user-profile>` (components/user/Profile.vue)
 - `<TexteditorBlogSideForm>` | `<texteditor-blog-side-form>` (components/texteditor/BlogSideForm.vue)
 - `<TexteditorEditor>` | `<texteditor-editor>` (components/texteditor/Editor.vue)
+- `<UserProfile>` | `<user-profile>` (components/user/Profile.vue)
+- `<DashboardSliderCardSlider>` | `<dashboard-slider-card-slider>` (components/dashboard/slider/CardSlider.vue)
