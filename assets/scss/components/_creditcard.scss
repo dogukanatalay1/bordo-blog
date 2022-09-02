@@ -1,0 +1,48 @@
+.credit {
+  width: 448px;
+  height: 260px;
+  color: white;
+  border-radius: 10px;
+  background-color: #4339f2;
+
+  &_heading {
+    padding: 20px;
+    border-radius: 10px;
+    &_head {
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 29px;
+    }
+    &_icon-container {
+      &_icon {
+        transform: rotate(90deg);
+        font-style: 22px;
+      }
+    }
+  }
+
+  &_info {
+    padding: 20px;
+
+    &_name {
+      font-weight: 400;
+      font-size: 14px;
+    }
+    &_number {
+      font-weight: 500;
+      font-size: 22px;
+    }
+  }
+
+  &_footer {
+    padding: 22px;
+
+    &_date {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 26px;
+    }
+    &_card {
+    }
+  }
+}

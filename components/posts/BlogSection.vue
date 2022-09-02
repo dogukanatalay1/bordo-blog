@@ -51,7 +51,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/assets/scss/abstracts/_variables.scss';
-.page-item.active .page-link {
+.page-item.active.page-link {
   border: 1px solid white;
   background-color: $bordo !important;
 }

@@ -2,4 +2,4 @@ export default {
   title: 'BlogPost'
 }
 
-export const Primary = () => '<BlogPost />'
+export const Primary = () => '<PostsBlogPost />'
