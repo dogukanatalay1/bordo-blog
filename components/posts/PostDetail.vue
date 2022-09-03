@@ -19,13 +19,6 @@ export default {
     sanitize (event) {
       event.preventDefault()
       const html = this.$sanitize(event.clipboardData.getData('text/html'))
-      // or
-      // const html = this.$sanitize(
-      //  event.clipboardData.getData('text/html'),
-      //  {
-      //    allowedTags: ['b', 'br']
-      //  }
-      // );
       document.execCommand('insertHTML', false, html)
     }
   }

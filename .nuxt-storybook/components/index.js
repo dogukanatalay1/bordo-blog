@@ -26,6 +26,8 @@ export { default as TagsTagList } from '../..\\components\\tags\\TagList.vue'
 export { default as TexteditorBlogSideForm } from '../..\\components\\texteditor\\BlogSideForm.vue'
 export { default as TexteditorEditor } from '../..\\components\\texteditor\\Editor.vue'
 export { default as UserProfile } from '../..\\components\\user\\Profile.vue'
+export { default as DashboardPaymentCardForm } from '../..\\components\\dashboard\\payment\\CardForm.vue'
+export { default as DashboardPaymentProcessBar } from '../..\\components\\dashboard\\payment\\ProcessBar.vue'
 export { default as DashboardSliderCardSlider } from '../..\\components\\dashboard\\slider\\CardSlider.vue'
 
 // nuxt/nuxt.js#8607

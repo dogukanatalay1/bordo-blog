@@ -34,4 +34,6 @@ You can directly use them in pages and other components without the need to impo
 - `<TexteditorBlogSideForm>` | `<texteditor-blog-side-form>` (components/texteditor/BlogSideForm.vue)
 - `<TexteditorEditor>` | `<texteditor-editor>` (components/texteditor/Editor.vue)
 - `<UserProfile>` | `<user-profile>` (components/user/Profile.vue)
+- `<DashboardPaymentCardForm>` | `<dashboard-payment-card-form>` (components/dashboard/payment/CardForm.vue)
+- `<DashboardPaymentProcessBar>` | `<dashboard-payment-process-bar>` (components/dashboard/payment/ProcessBar.vue)
 - `<DashboardSliderCardSlider>` | `<dashboard-slider-card-slider>` (components/dashboard/slider/CardSlider.vue)

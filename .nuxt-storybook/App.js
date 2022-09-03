@@ -21,8 +21,9 @@ import '..\\assets\\scss\\abstracts\\_variables.scss'
 
 import _5fa3735e from '..\\layouts\\dashboard.vue'
 import _6f6c098b from '..\\layouts\\default.vue'
+import _37173560 from '..\\layouts\\payment.vue'
 
-const layouts = { "_dashboard": sanitizeComponent(_5fa3735e),"_default": sanitizeComponent(_6f6c098b) }
+const layouts = { "_dashboard": sanitizeComponent(_5fa3735e),"_default": sanitizeComponent(_6f6c098b),"_payment": sanitizeComponent(_37173560) }
 
 export default {
   render (h, props) {

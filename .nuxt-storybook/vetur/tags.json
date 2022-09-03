@@ -83,6 +83,12 @@
   "UserProfile": {
     "description": "Auto imported from components/user/Profile.vue"
   },
+  "DashboardPaymentCardForm": {
+    "description": "Auto imported from components/dashboard/payment/CardForm.vue"
+  },
+  "DashboardPaymentProcessBar": {
+    "description": "Auto imported from components/dashboard/payment/ProcessBar.vue"
+  },
   "DashboardSliderCardSlider": {
     "description": "Auto imported from components/dashboard/slider/CardSlider.vue"
   }

@@ -3,77 +3,66 @@
     "name": "blogs",
     "path": "/blogs",
     "component": "C:\\\\Users\\\\doguk\\\\OneDrive\\\\Masaüstü\\\\bordo-blog\\\\pages\\\\blogs\\\\index.vue",
-    "chunkName": "pages/blogs/index",
-    "_name": "_fe2825fc"
+    "chunkName": "pages/blogs/index"
   },
   {
     "name": "createblog",
     "path": "/createblog",
     "component": "C:\\\\Users\\\\doguk\\\\OneDrive\\\\Masaüstü\\\\bordo-blog\\\\pages\\\\createblog.vue",
-    "chunkName": "pages/createblog",
-    "_name": "_682d5782"
+    "chunkName": "pages/createblog"
   },
   {
     "name": "dashboard",
     "path": "/dashboard",
     "component": "C:\\\\Users\\\\doguk\\\\OneDrive\\\\Masaüstü\\\\bordo-blog\\\\pages\\\\dashboard\\\\index.vue",
-    "chunkName": "pages/dashboard/index",
-    "_name": "_3a0f89c2"
+    "chunkName": "pages/dashboard/index"
   },
   {
     "name": "reset-password",
     "path": "/reset-password",
     "component": "C:\\\\Users\\\\doguk\\\\OneDrive\\\\Masaüstü\\\\bordo-blog\\\\pages\\\\reset-password.vue",
-    "chunkName": "pages/reset-password",
-    "_name": "_415408fa"
+    "chunkName": "pages/reset-password"
   },
   {
     "name": "signin",
     "path": "/signin",
     "component": "C:\\\\Users\\\\doguk\\\\OneDrive\\\\Masaüstü\\\\bordo-blog\\\\pages\\\\signin.vue",
-    "chunkName": "pages/signin",
-    "_name": "_17801bc3"
+    "chunkName": "pages/signin"
   },
   {
     "name": "signup",
     "path": "/signup",
     "component": "C:\\\\Users\\\\doguk\\\\OneDrive\\\\Masaüstü\\\\bordo-blog\\\\pages\\\\signup.vue",
-    "chunkName": "pages/signup",
-    "_name": "_2c167239"
+    "chunkName": "pages/signup"
   },
   {
     "name": "test2",
     "path": "/test2",
     "component": "C:\\\\Users\\\\doguk\\\\OneDrive\\\\Masaüstü\\\\bordo-blog\\\\pages\\\\test2.vue",
-    "chunkName": "pages/test2",
-    "_name": "_6f2480cf"
+    "chunkName": "pages/test2"
   },
   {
     "name": "userprofile",
     "path": "/userprofile",
     "component": "C:\\\\Users\\\\doguk\\\\OneDrive\\\\Masaüstü\\\\bordo-blog\\\\pages\\\\userprofile.vue",
-    "chunkName": "pages/userprofile",
-    "_name": "_61bc2a2d"
+    "chunkName": "pages/userprofile"
   },
   {
     "name": "dashboard-charts",
     "path": "/dashboard/charts",
     "component": "C:\\\\Users\\\\doguk\\\\OneDrive\\\\Masaüstü\\\\bordo-blog\\\\pages\\\\dashboard\\\\charts.vue",
-    "chunkName": "pages/dashboard/charts",
-    "_name": "_84bcbb50"
+    "chunkName": "pages/dashboard/charts"
   },
   {
     "name": "blogs-blogid",
     "path": "/blogs/:blogid",
     "component": "C:\\\\Users\\\\doguk\\\\OneDrive\\\\Masaüstü\\\\bordo-blog\\\\pages\\\\blogs\\\\_blogid\\\\index.vue",
-    "chunkName": "pages/blogs/_blogid/index",
-    "_name": "_74169c76"
+    "chunkName": "pages/blogs/_blogid/index"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\doguk\\\\OneDrive\\\\Masaüstü\\\\bordo-blog\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_f03ada7e"
+    "chunkName": "pages/index"
   }
 ]
