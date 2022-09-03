@@ -1,45 +1,48 @@
 <template>
-  <div class="form">
-    <div class="form__title">
-      <div class="form__title__add">
-        <div class="icon-container">
-          <ion-icon class="icon-container__icon" name="checkmark-sharp" />
+  <div>
+    <form action="" class="form">
+      <div class="form__title">
+        <div class="form__title__add">
+          <div class="icon-container">
+            <ion-icon class="icon-container__icon" name="checkmark-sharp" />
+          </div>
+          Add new card
         </div>
-        Add new card
       </div>
-    </div>
-    <div class="form__input-container">
-      <div class="form__input-container__content">
-        <span class="heading">Card number</span>
-        <span class="text">Enter the 16-digit card number on the card</span>
+
+      <div class="form__input-container">
+        <div class="form__input-container__content">
+          <span class="heading">Card number</span>
+          <span class="text">Enter the 16-digit card number on the card</span>
+        </div>
+        <ion-icon
+          name="card-sharp"
+          style="align-self: center; font-size: 2em"
+        /><input
+          v-model="cardNumber"
+          maxlength="16"
+          class="form__input-container__input"
+        >
       </div>
-      <ion-icon
-        name="card-sharp"
-        style="align-self: center; font-size: 2em"
-      /><input
-        v-model="cardNumber"
-        maxlength="16"
-        class="form__input-container__input"
-      >
-    </div>
-    <div class="form__input-container">
-      <div class="form__input-container__content">
-        <span class="heading">Card owner</span>
-        <span class="text">Enter the name on the card</span>
+      <div class="form__input-container">
+        <div class="form__input-container__content">
+          <span class="heading">Card owner</span>
+          <span class="text">Enter the name on the card</span>
+        </div>
+        <input v-model="cardOwner" class="form__input-container__input">
       </div>
-      <input v-model="cardOwner" class="form__input-container__input">
-    </div>
-    <div style="gap: 8px" class="form__input-container">
-      <div class="form__input-container__content">
-        <span class="heading">Expiry date</span>
-        <span class="text">Enter the expiration date of the card</span>
+      <div style="gap: 8px" class="form__input-container">
+        <div class="form__input-container__content">
+          <span class="heading">Expiry date</span>
+          <span class="text">Enter the expiration date of the card</span>
+        </div>
+        <input v-model="expireMonth" class="form__input-container__input-sm">
+        <span style="align-self: center">/</span>
+        <input v-model="expireYear" class="form__input-container__input-sm">
+        <span style="align-self: center">CVV2</span>
+        <input v-model="cvc" class="form__input-container__input-sm">
       </div>
-      <input v-model="expireMonth" class="form__input-container__input-sm">
-      <span style="align-self: center">/</span>
-      <input v-model="expireYear" class="form__input-container__input-sm">
-      <span style="align-self: center">CVV2</span>
-      <input v-model="cvc" class="form__input-container__input-sm">
-    </div>
+    </form>
   </div>
 </template>
 
