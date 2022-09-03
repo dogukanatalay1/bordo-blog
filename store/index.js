@@ -1,10 +1,4 @@
-export const state = () => ({
-  cardNumber: '',
-  cardOwner: '',
-  expireMonth: '',
-  expireYear: '',
-  cvc: ''
-})
+export const state = () => ({})
 
 export const getters = {}
 

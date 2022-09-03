@@ -1,6 +1,6 @@
 <template>
   <div class="post">
-    <!-- <DashboardPaymentCardForm /> -->
+    <DashboardPaymentCardForm />
     <DashboardPaymentProcessBar />
   </div>
 </template>

@@ -8,7 +8,7 @@
         Add new card
       </div>
     </div>
-    <div class="form__input-container d-flex justify-content-between">
+    <div class="form__input-container">
       <div class="form__input-container__content">
         <span class="heading">Card number</span>
         <span class="text">Enter the 16-digit card number on the card</span>
@@ -22,17 +22,14 @@
         class="form__input-container__input"
       >
     </div>
-    <div class="form__input-container d-flex justify-content-between">
+    <div class="form__input-container">
       <div class="form__input-container__content">
         <span class="heading">Card owner</span>
         <span class="text">Enter the name on the card</span>
       </div>
       <input v-model="cardOwner" class="form__input-container__input">
     </div>
-    <div
-      style="gap: 8px"
-      class="form__input-container d-flex justify-content-between"
-    >
+    <div style="gap: 8px" class="form__input-container">
       <div class="form__input-container__content">
         <span class="heading">Expiry date</span>
         <span class="text">Enter the expiration date of the card</span>
@@ -110,6 +107,7 @@ export default {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: space-between;
     padding: 0px;
     gap: 16px;
     width: 90%;
