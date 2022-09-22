@@ -26,14 +26,6 @@
             <div
               class="post-card_content_head-subhead_head-and-text_head-and-icon_icon-wrap"
             >
-              <!------>
-              <!-- <nuxt-link :to="`/blogs/:${post.title}`">
-                <ion-icon
-                  class="post-card_content_head-subhead_head-and-text_head-and-icon_icon-wrap_icon"
-                  name="arrow-forward-outline"
-                />
-              </nuxt-link> -->
-              <!------>
               <nuxt-link
                 class="post-card_content_head-subhead_head-and-text_head-and-icon_icon-wrap_icon"
                 :to="{
@@ -46,7 +38,6 @@
                   name="arrow-forward-outline"
                 />
               </nuxt-link>
-              <!------>
             </div>
           </div>
           <p class="post-card_content_head-subhead_head-and-text_text">
@@ -57,17 +48,6 @@
       <div
         class="post-card_content_avatar-container d-flex flex-row align-items-center p-0"
       >
-        <!-- <img
-          class="post-card_content_avatar-container_avatar"
-          src="@/static/images/quote.png"
-          alt=""
-        > -->
-        <!-- <img
-          v-if="post.writer.avatar.url"
-          :src="post.writer.avatar.url"
-          alt=""
-          class="post-card_content_avatar-container_avatar"
-        > -->
         <div class="post-card_content_avatar-container_name-and-date">
           <p class="post-card_content_avatar-container_name-and-date_name">
             {{ post.writer.first_name }} {{ post.writer.last_name }}

@@ -72,19 +72,8 @@ export default {
       image: null
     }
   },
-  watch: {
-    tagList () {
-      console.log(this.tagList)
-    }
-  },
   methods: {
     createPost () {
-      // const tagIdList = []
-      // for (let i = 0; i < this.tagList.length; i++) {
-      //   tagIdList.push(this.tagList[i]._id)
-      //   // console.log(this.tagList[i])
-      // }
-
       const tagIdList = this.tagList.map(tag => tag._id)
 
       const object = {
@@ -96,18 +85,15 @@ export default {
       }
 
       const formData = serialize(object)
-      /*
-      Serializing: The process whereby an object or data
+      /* Serializing: The process whereby an object or data
       structure is translated into a format
-      suitable for transfer over a network, or storage
-      */
+      suitable for transfer over a network, or storage */
       this.$API.posts.createPost(formData).then((response) => {
         console.log(response)
       })
     },
     uploadImage (e) {
       this.image = e.target.files[0]
-      console.log(this.image)
     }
   }
 }

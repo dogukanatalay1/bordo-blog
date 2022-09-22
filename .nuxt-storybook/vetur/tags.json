@@ -71,17 +71,20 @@
   "PostsPostForm": {
     "description": "Auto imported from components/posts/PostForm.vue"
   },
-  "TagsTagList": {
-    "description": "Auto imported from components/tags/TagList.vue"
-  },
   "TexteditorBlogSideForm": {
     "description": "Auto imported from components/texteditor/BlogSideForm.vue"
   },
   "TexteditorEditor": {
     "description": "Auto imported from components/texteditor/Editor.vue"
   },
+  "TagsTagList": {
+    "description": "Auto imported from components/tags/TagList.vue"
+  },
   "UserProfile": {
     "description": "Auto imported from components/user/Profile.vue"
+  },
+  "DashboardPaymentAddressForm": {
+    "description": "Auto imported from components/dashboard/payment/AddressForm.vue"
   },
   "DashboardPaymentCardForm": {
     "description": "Auto imported from components/dashboard/payment/CardForm.vue"

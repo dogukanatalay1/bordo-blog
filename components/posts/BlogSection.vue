@@ -8,7 +8,6 @@
     >
       <PostsBlogPost v-for="post in posts" :key="post.id" :post="post" />
     </div>
-
     <b-pagination
       v-model="currentPage"
       :total-rows="pageCount * perPage"

@@ -1,8 +1,6 @@
 <template>
   <div class="detail-component">
-    <!-- <div v-html="post.content" /> -->
-    <!-- <div contenteditable="true" @paste="sanitize()" /> -->
-    <span v-sanitize.nothing="post.content" />
+    <span v-sanitize="post.content" />
   </div>
 </template>
 

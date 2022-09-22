@@ -19,7 +19,8 @@
       class="credit_footer d-flex justify-content-between align-items-center"
     >
       <span class="credit_footer_date">04 / 23</span>
-      <span class="credit_footer_card d-flex align-items-center"><ion-icon style="color: #ff3a29" name="ellipse" />mastercard</span>
+      <span class="credit_footer_card d-flex align-items-center">
+        <ion-icon style="color: #ff3a29" name="ellipse" />mastercard</span>
     </div>
   </div>
 </template>

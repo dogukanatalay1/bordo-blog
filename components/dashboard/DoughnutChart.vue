@@ -62,8 +62,6 @@ export default {
   data () {
     return {
       chartData: {
-        // labels: ['VueJs', 'EmberJs', 'ReactJs', 'AngularJs'],
-        // labels: this.tags,
         datasets: [
           {
             backgroundColor: [this.color, '#E2FBD7'],

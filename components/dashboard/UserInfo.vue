@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div />
+  <!-- <div>
     <div class="user-info">
       <div class="user-info_user-container d-flex">
         <div class="user-info_user-container_img-container">
@@ -43,7 +44,7 @@
         </button>
       </div>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <script>

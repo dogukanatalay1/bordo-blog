@@ -25,9 +25,6 @@
         />
       </div>
     </div>
-    <!-- <div class="count-input-container">
-      Count: <input v-model="count" class="count-input" type="number">
-    </div> -->
   </div>
 </template>
 

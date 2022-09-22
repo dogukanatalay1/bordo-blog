@@ -2,6 +2,7 @@
   <div class="post">
     <DashboardPaymentCardForm />
     <DashboardPaymentProcessBar />
+    <DashboardPaymentAddressForm />
   </div>
 </template>
 

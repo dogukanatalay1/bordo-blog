@@ -15,7 +15,6 @@
             # {{ selection.name }}
           </v-chip>
         </v-col>
-
         <v-col v-if="!allSelected" cols="12">
           <v-text-field
             ref="search"
@@ -28,9 +27,7 @@
         </v-col>
       </v-row>
     </v-container>
-
     <v-divider v-if="!allSelected" />
-
     <v-list>
       <template v-for="item in categories">
         <v-list-item
@@ -46,7 +43,6 @@
         </v-list-item>
       </template>
     </v-list>
-
     <v-divider />
   </v-card>
 </template>
@@ -107,7 +103,6 @@ export default {
     getAllTags () {
       this.$API.tags.getAllTags().then((response) => {
         this.items = response.data.data
-        // console.log(response.data.data)
       })
     }
   }

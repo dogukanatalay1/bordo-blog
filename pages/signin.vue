@@ -39,22 +39,6 @@
           </div>
         </form>
       </div>
-      <!-- <div>
-        <b-button v-b-modal.modal-1>
-          Forgot password?
-        </b-button>
-
-        <b-modal id="modal-1">
-          <input
-            v-model="email"
-            style="border: 1px solid black; padding: 5px; border-radius: 10px"
-            type="text"
-          >
-          <button @click="sendEmail()">
-            Send
-          </button>
-        </b-modal>
-      </div> -->
       <div>
         <b-button
           style="background: transparent; border: none; color: black !important"
@@ -127,7 +111,6 @@ export default {
           .then(() => this.$router.push({ name: 'index' }))
       } catch (error) {
         this.error = error.response.data.error.message
-        // console.log(error)
       }
     },
     sendEmail () {
