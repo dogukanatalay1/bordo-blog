@@ -7,5 +7,8 @@ export default axios => ({
   },
   getDistrictWithCity: (cityId, parameters = {}) => {
     return axios.get(`/addresses/get-all/district/${cityId}`)
+  },
+  createAddress: (parameters = {}) => {
+    return axios.post('/addresses/create', { ...parameters })
   }
 })
