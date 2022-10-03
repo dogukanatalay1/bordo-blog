@@ -93,11 +93,6 @@ export default {
       modalShow: false
     }
   },
-  mounted () {
-    if (this.$auth.loggedIn) {
-      this.$router.push({ name: 'index' })
-    }
-  },
   methods: {
     async userLogin () {
       try {
@@ -111,6 +106,7 @@ export default {
           .then(() => this.$router.push({ name: 'index' }))
       } catch (error) {
         this.error = error.response.data.error.message
+        console.log(error)
       }
     },
     sendEmail () {

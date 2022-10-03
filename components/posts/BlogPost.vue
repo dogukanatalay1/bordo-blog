@@ -84,7 +84,6 @@ export default {
     deletePost () {
       this.$API.posts.deletePost(this.post._id).then((response) => {
         console.log(response)
-        this.$forceUpdate()
       })
     }
   }

@@ -91,7 +91,6 @@ export default {
     selected () {
       this.search = ''
       this.$emit('tagList', this.selected)
-      // console.log(this.selected)
     }
   },
 

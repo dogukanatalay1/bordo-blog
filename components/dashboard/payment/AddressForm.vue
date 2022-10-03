@@ -72,7 +72,8 @@ export default {
       selectedDistrict: '',
       primaryAddress: '',
       secondaryAddress: '',
-      message: ''
+      message: '',
+      response: null
     }
   },
   watch: {
@@ -95,7 +96,6 @@ export default {
     getCitiesWithCountry (id) {
       this.$API.addresses.getCitiesWithCountry(id).then((res) => {
         this.cities = res.data.data.cities
-        console.log(res)
       })
     },
     getDistrictWithCity (id) {
@@ -114,10 +114,19 @@ export default {
         }
         this.$API.addresses
           .createAddress(address)
-          .then(res => (this.message = res.data.message))
+          .then(res => (this.message = res.data.data.message))
+          .then((res) => {
+            console.log(res)
+            this.response = res
+            console.log('this.response: ' + this.response)
+          })
+
+        // if (this.response.status === '400') {
+        //   throw new Error('custom exception')
+        // }
       } catch (error) {
-        this.message = error.response.message
-        console.log(error)
+        // this.message = error.error.message
+        console.log('error:' + error)
       }
     }
   }
