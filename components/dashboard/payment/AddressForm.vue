@@ -114,18 +114,13 @@ export default {
         }
         this.$API.addresses
           .createAddress(address)
-          .then(res => (this.message = res.data.data.message))
+          // .then(res => (this.message = res.data.data.message))
           .then((res) => {
             console.log(res)
             this.response = res
-            console.log('this.response: ' + this.response)
+            // console.log('this.response: ' + this.response)
           })
-
-        // if (this.response.status === '400') {
-        //   throw new Error('custom exception')
-        // }
       } catch (error) {
-        // this.message = error.error.message
         console.log('error:' + error)
       }
     }

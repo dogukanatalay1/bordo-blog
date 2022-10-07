@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
   <div class="hello">
     <Line :chart-data="datacollection" />
   </div>
@@ -80,4 +80,4 @@ li {
 a {
   color: #42b983;
 }
-</style> -->
+</style>

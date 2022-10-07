@@ -35,7 +35,7 @@ export default {
     return {
       tags: [],
       colors: ['#34B53A', '#4339F2', '#FF3A29', '#02A0FC'],
-      count: 4
+      count: 5
     }
   },
   watch: {

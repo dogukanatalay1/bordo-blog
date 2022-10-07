@@ -1,5 +1,8 @@
 <template>
-  <div><DashboardTagsPercent /></div>
+  <div>
+    <DashboardTagsPercent />
+    <DashboardLineChart />
+  </div>
 </template>
 
 <script>
