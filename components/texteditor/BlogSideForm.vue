@@ -15,7 +15,8 @@
     </div>
 
     <div class="side-form_tags">
-      <TagsTagList @tagList="tagList = $event" />
+      <TagsTagList ref="tagListComponent" @tagList="tagList = $event" />
+      <!-- <TagsTagList @tagList="tagList = $event" /> -->
     </div>
 
     <div class="side-form_form">
@@ -74,9 +75,12 @@ export default {
   },
   methods: {
     createPost () {
+      this.$refs.tagListComponent.updateTagList()
+      console.log(this.tagList)
+
       const tagIdList = this.tagList.map(tag => tag._id)
 
-      const object = {
+      const postObject = {
         title: this.title,
         description: this.description,
         content: this.content,
@@ -84,10 +88,8 @@ export default {
         cover_image: this.image
       }
 
-      const formData = serialize(object)
-      /* Serializing: The process whereby an object or data
-      structure is translated into a format
-      suitable for transfer over a network, or storage */
+      const formData = serialize(postObject)
+
       this.$API.posts.createPost(formData).then((response) => {
         console.log(response)
       })

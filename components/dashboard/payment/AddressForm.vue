@@ -114,10 +114,9 @@ export default {
         }
         this.$API.addresses
           .createAddress(address)
-          // .then(res => (this.message = res.data.data.message))
           .then((res) => {
             console.log(res)
-            this.response = res
+            // this.response = res
             // console.log('this.response: ' + this.response)
           })
       } catch (error) {

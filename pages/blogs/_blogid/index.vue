@@ -9,12 +9,12 @@ export default {
   name: 'BlogId',
   data () {
     return {
-      id: this.$route.params.postId,
-      post: {}
+      postId: this.$route.params.postId,
+      post: null
     }
   },
   created () {
-    this.getSingleUsersPost(this.id)
+    this.getSingleUsersPost(this.postId)
   },
   methods: {
     getSingleUsersPost (Id) {

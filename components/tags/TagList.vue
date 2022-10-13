@@ -82,27 +82,25 @@ export default {
       for (const selection of this.selected) {
         selections.push(selection)
       }
-
       return selections
     }
   },
-
   watch: {
     selected () {
       this.search = ''
-      this.$emit('tagList', this.selected)
     }
   },
-
   created () {
     this.getAllTags()
   },
-
   methods: {
     getAllTags () {
       this.$API.tags.getAllTags().then((response) => {
         this.items = response.data.data
       })
+    },
+    updateTagList () {
+      this.$emit('taglist', this.selected)
     }
   }
 }

@@ -11,7 +11,7 @@
     <b-pagination
       v-model="currentPage"
       :total-rows="pageCount * perPage"
-      :per-page="perPage"
+      :per-page="postPerPage"
       aria-controls="my-table"
       class="pagination-rows"
     />
@@ -24,18 +24,18 @@ export default {
   data () {
     return {
       posts: [],
-      perPage: 3,
+      postPerPage: 3,
       currentPage: 1,
       pageCount: 0
     }
   },
   watch: {
     currentPage () {
-      this.getLimitedPosts(this.perPage, this.currentPage)
+      this.getLimitedPosts(this.postPerPage, this.currentPage)
     }
   },
   created () {
-    this.getLimitedPosts(this.perPage, this.currentPage)
+    this.getLimitedPosts(this.postPerPage, this.currentPage)
   },
   methods: {
     getLimitedPosts (limit, page) {
